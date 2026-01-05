@@ -249,9 +249,10 @@
             const sharedName = urlParams.get('ch');
 
             try {
-                // جلب ملف القنوات الذي ولده البايثون
-                // نضيف الوقت لمنع الكاش
-                const response = await fetch('channels.json?t=' + Date.now());
+                // محاولة جلب الملف
+                const jsonUrl = 'channels.json?t=' + Date.now();
+                const response = await fetch(jsonUrl);
+                
                 if (!response.ok) throw new Error("File not found");
                 
                 allChannels = await response.json();
@@ -264,9 +265,21 @@
                     if(ch) playChannel(ch);
                 }
             } catch (err) {
-                console.error(err);
-                document.getElementById('channels-grid').innerHTML = 
-                    '<div class="system-msg" style="color:#e50914">لم يتم العثور على ملف القنوات. تأكد من عمل البوت (update.py).</div>';
+                console.error("Error loading channels:", err);
+                
+                // معالجة خطأ المعاينة (Preview) حيث لا يمكن قراءة الملفات المجاورة بسهولة
+                if(err.message.includes('Failed to parse URL') || location.protocol === 'blob:') {
+                     allChannels = [
+                        {name: "قناة تجريبية (Preview)", logo: "https://via.placeholder.com/100?text=Demo", category: "general", urls: ["https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"]},
+                        {name: "MBC 1 (Demo)", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/MBC_1_Logo.svg/512px-MBC_1_Logo.svg.png", category: "general", urls: ["https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"]}
+                    ];
+                    renderChannels(allChannels);
+                    showToast('وضع المعاينة: تم استخدام بيانات تجريبية ⚠️', true);
+                    document.getElementById('channels-grid').insertAdjacentHTML('afterbegin', '<div style="grid-column:1/-1;text-align:center;color:#ffd700;margin-bottom:10px;border:1px dashed #ffd700;padding:10px;">⚠️ تنبيه: أنت في وضع المعاينة (Preview). لكي تظهر جميع القنوات الحقيقية، يجب رفع الملفات على GitHub.</div>');
+                } else {
+                    document.getElementById('channels-grid').innerHTML = 
+                        '<div class="system-msg" style="color:#e50914">لم يتم العثور على ملف القنوات (channels.json). تأكد من تشغيل ملف البايثون (update.py).</div>';
+                }
             }
             setupGestures();
             setupShortcuts();
