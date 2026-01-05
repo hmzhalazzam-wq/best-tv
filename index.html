@@ -3,430 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#000000">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>تلفزيون حمزة Ultra 📺 - مشاهدة مباشرة</title>
+    <title>Ultimate TV Pro 📺</title>
+    <link rel="manifest" href="manifest.json">
     
-    <!-- مكتبات الفيديو والتصميم -->
-    <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Video.js & HLS -->
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
             --primary: #e50914;
-            --secondary: #00e676;
-            --bg-main: #141414;
-            --bg-card: #1f1f1f;
-            --text-main: #ffffff;
-            --text-muted: #b3b3b3;
+            --bg: #141414;
+            --surface: #1f1f1f;
+            --text-main: #fff;
+            --text-sec: #b3b3b3;
+            --success: #46d369;
         }
 
         body {
-            margin: 0;
-            background-color: var(--bg-main);
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg);
             color: var(--text-main);
-            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
             overflow-x: hidden;
             -webkit-tap-highlight-color: transparent;
         }
 
-        /* --- المشغل --- */
-        .player-container {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            width: 100%;
-            background: #000;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-        }
-
-        .video-js {
-            width: 100%;
-            aspect-ratio: 16/9;
-            font-family: 'Cairo', sans-serif;
-        }
-        
-        .vjs-big-play-button {
-            background-color: var(--primary) !important;
-            border-radius: 50% !important;
-            width: 70px !important;
-            height: 70px !important;
-            line-height: 70px !important;
-            margin-left: -35px !important;
-            margin-top: -35px !important;
-            border: none !important;
-        }
-
-        /* --- معلومات القناة --- */
-        .channel-info {
-            padding: 15px;
-            background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, transparent 100%);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .channel-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin: 0;
-        }
-
-        .status-badge {
-            font-size: 0.8rem;
-            padding: 4px 12px;
-            border-radius: 20px;
-            background: rgba(255,255,255,0.1);
-            color: var(--secondary);
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--secondary);
-            border-radius: 50%;
-            box-shadow: 0 0 10px var(--secondary);
-        }
-
-        /* --- التحكم والبحث --- */
-        .controls-area {
-            padding: 10px 15px;
-        }
-
-        .search-box {
+        /* --- Player Wrapper --- */
+        .player-wrapper {
             position: relative;
-            margin-bottom: 15px;
-        }
-
-        .search-input {
+            background: #000;
             width: 100%;
-            padding: 12px 45px 12px 15px;
-            background: var(--bg-card);
-            border: 1px solid #333;
-            border-radius: 12px;
-            color: white;
-            font-family: inherit;
-            font-size: 1rem;
-            transition: 0.3s;
-        }
-        .search-input:focus { border-color: var(--primary); outline: none; }
-
-        .search-icon {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #666;
+            max-height: 85vh; 
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            overflow: hidden;
         }
 
-        .categories {
-            display: flex;
-            gap: 10px;
-            overflow-x: auto;
-            padding-bottom: 10px;
-            scrollbar-width: none;
-        }
-        .categories::-webkit-scrollbar { display: none; }
-
-        .cat-btn {
-            background: var(--bg-card);
-            border: 1px solid #333;
-            color: var(--text-muted);
-            padding: 8px 16px;
-            border-radius: 20px;
-            white-space: nowrap;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .cat-btn.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
+        @media (min-width: 1024px) {
+            .player-wrapper {
+                max-width: 1100px;
+                margin: 20px auto;
+                border-radius: 12px;
+                border: 1px solid #333;
+            }
         }
 
-        /* --- شبكة القنوات --- */
+        .video-js { width: 100%; height: 100%; font-family: 'Tajawal', sans-serif; }
+        .video-js.vjs-fluid { height: 0 !important; padding-top: 56.25%; }
+        
+        .video-js .vjs-big-play-button {
+            background-color: var(--primary) !important;
+            border: none;
+            width: 80px; height: 80px; line-height: 80px;
+            border-radius: 50%;
+            top: 50%; left: 50%; transform: translate(-50%, -50%);
+            backdrop-filter: blur(5px);
+        }
+
+        #brightness-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: black; opacity: 0; pointer-events: none; z-index: 50;
+            transition: opacity 0.1s;
+        }
+
+        .gesture-hud {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.7); padding: 15px 25px; border-radius: 10px;
+            font-size: 1.5rem; color: white; display: none; z-index: 60;
+            backdrop-filter: blur(5px); border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .controls-panel {
+            background: #181818; border-bottom: 1px solid #333;
+            padding: 15px; max-width: 1100px; margin: 0 auto;
+        }
+
+        .channel-header {
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 10px;
+        }
+
+        .current-channel-info { display: flex; flex-direction: column; }
+        .current-channel-name { font-weight: 800; font-size: 1.2rem; }
+        .current-channel-status { font-size: 0.8rem; color: var(--success); display: flex; align-items: center; gap: 5px; }
+
+        .player-actions { display: flex; gap: 10px; }
+        .action-btn {
+            background: #333; border: none; color: white; padding: 8px 12px;
+            border-radius: 6px; cursor: pointer; font-size: 0.9rem;
+            display: flex; align-items: center; gap: 5px; transition: 0.2s;
+        }
+        .action-btn:hover { background: #444; }
+        .action-btn.share { background: #2563eb; }
+
+        /* Navigation */
+        .nav-container { max-width: 1100px; margin: 0 auto; padding: 10px 15px; }
+        .category-scroll {
+            display: flex; gap: 10px; overflow-x: auto;
+            padding-bottom: 10px; scrollbar-width: none;
+        }
+        .category-scroll::-webkit-scrollbar { display: none; }
+
+        .cat-tag {
+            background: #2a2a2a; padding: 8px 18px; border-radius: 50px;
+            font-size: 0.9rem; cursor: pointer; white-space: nowrap;
+            border: 1px solid #333; transition: 0.3s;
+        }
+        .cat-tag.active { background: var(--primary); color: white; border-color: var(--primary); font-weight: bold; }
+        .cat-tag.special { color: #ffd700; border-color: #ffd700; }
+        .cat-tag.special.active { background: #ffd700; color: black; }
+
+        .search-container { margin-top: 10px; }
+        .search-input {
+            width: 100%; padding: 12px 15px; border-radius: 8px;
+            border: 1px solid #333; background: #252525; color: white;
+            font-family: inherit; font-size: 1rem;
+        }
+
+        /* Grid */
         .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-            gap: 12px;
-            padding: 15px;
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            gap: 15px; padding: 15px; max-width: 1100px; margin: 0 auto;
             padding-bottom: 80px;
         }
 
-        .channel-card {
-            background: var(--bg-card);
-            border-radius: 12px;
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.2s, background 0.2s;
-            position: relative;
-            border: 1px solid transparent;
+        .card {
+            background: var(--surface); border-radius: 12px; padding: 15px;
+            display: flex; flex-direction: column; align-items: center; text-align: center;
+            cursor: pointer; transition: all 0.2s; position: relative; height: 150px;
+            border: 1px solid #333;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); background: #252525; }
+        
+        .card img {
+            width: 60px; height: 60px; object-fit: contain; margin-bottom: 10px;
+            pointer-events: none; filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+            background: rgba(255,255,255,0.05); border-radius: 50%; padding: 5px;
         }
 
-        .channel-card:active { transform: scale(0.95); }
-        .channel-card.playing { border-color: var(--primary); background: rgba(229, 9, 20, 0.1); }
-
-        .channel-logo {
-            width: 60px;
-            height: 60px;
-            object-fit: contain;
-            margin-bottom: 10px;
-            border-radius: 50%;
-            background: #fff;
-            padding: 5px;
+        .card-title {
+            font-size: 0.85rem; font-weight: 600; line-height: 1.3;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
         }
 
-        .channel-name {
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #eee;
-            line-height: 1.3;
-            max-width: 100%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
+        .fav-heart {
+            position: absolute; top: 8px; left: 8px; font-size: 1.2rem;
+            color: #444; transition: 0.2s; z-index: 5; padding: 5px;
         }
+        .fav-heart:hover, .fav-heart.active { color: var(--primary); }
 
-        .fav-icon {
-            position: absolute;
-            top: 8px;
-            left: 8px;
-            font-size: 1rem;
-            color: #444;
+        .system-msg {
+            grid-column: 1 / -1; text-align: center; padding: 40px;
+            color: #777; background: #1a1a1a; border-radius: 10px; border: 1px dashed #333;
         }
-        .fav-icon.active { color: gold; }
-
-        /* --- رسائل التنبيه --- */
+        
         .toast {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%) translateY(100px);
-            background: rgba(255,255,255,0.9);
-            color: black;
-            padding: 12px 24px;
-            border-radius: 30px;
-            font-weight: bold;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            opacity: 0;
-            z-index: 2000;
-            pointer-events: none;
+            position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%);
+            background: rgba(20, 20, 20, 0.95); color: white; padding: 12px 24px;
+            border-radius: 30px; font-weight: bold; box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            display: flex; align-items: center; gap: 10px; opacity: 0; visibility: hidden;
+            transition: 0.3s; z-index: 2000; border: 1px solid #333;
         }
-        .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+        .toast.show { opacity: 1; visibility: visible; bottom: 50px; }
 
-        /* الشاشة الفارغة */
-        .loader-screen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 50px;
-            color: #555;
-            grid-column: 1/-1;
+        .server-selector {
+            display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; scrollbar-width: none;
         }
-        .fa-spin { margin-bottom: 15px; }
+        .server-btn {
+            background: #333; color: white; border: 1px solid #444; padding: 5px 15px;
+            border-radius: 4px; cursor: pointer; font-size: 0.8rem; white-space: nowrap;
+        }
+        .server-btn:hover { background: var(--primary); border-color: var(--primary); }
 
+        .touch-area-left, .touch-area-right {
+            position: absolute; top: 0; height: 100%; width: 40%; z-index: 20;
+        }
+        .touch-area-left { left: 0; }
+        .touch-area-right { right: 0; }
     </style>
 </head>
 <body>
 
-    <!-- قسم الفيديو -->
-    <div class="player-container">
-        <video id="h-player" class="video-js vjs-big-play-centered" controls playsinline preload="none" poster="https://via.placeholder.com/1920x1080/000000/333333?text=Hamza+TV">
-            <p class="vjs-no-js">يرجى تفعيل الجافاسكربت لتشغيل البث</p>
-        </video>
-        
-        <div class="channel-info">
-            <div>
-                <h1 id="current-title" class="channel-title">تلفزيون حمزة</h1>
-                <small id="current-status" style="color: #888;">اختر قناة للبدء</small>
+    <!-- 1. المشغل -->
+    <div class="player-wrapper">
+        <div id="brightness-overlay"></div>
+        <div id="gesture-feedback" class="gesture-hud"></div>
+        <div class="touch-area-left" id="touch-left"></div>
+        <div class="touch-area-right" id="touch-right"></div>
+        <video id="tv-player" class="video-js vjs-default-skin vjs-big-play-centered" controls muted playsinline preload="none" poster="https://wallpapers.com/images/hd/netflix-background-gs7hjuwvv2g0e9fj.jpg" data-setup='{"liveui": true, "fluid": true}'></video>
+    </div>
+
+    <!-- 2. لوحة التحكم -->
+    <div class="controls-panel">
+        <div class="channel-header">
+            <div class="current-channel-info">
+                <div id="channel-name" class="current-channel-name">Ultimate TV Pro</div>
+                <div class="current-channel-status"><i class="fas fa-satellite-dish"></i> <span id="status-text">انتظر تحميل القائمة...</span></div>
             </div>
-            <div class="status-badge" id="live-badge" style="opacity: 0;">
-                <div class="status-dot"></div> مباشر
+            <div class="player-actions">
+                <button class="action-btn" onclick="togglePiP()" title="PiP"><i class="fas fa-images"></i> PiP</button>
+                <button class="action-btn" onclick="setSleepTimer()" title="Timer"><i class="fas fa-stopwatch"></i> مؤقت</button>
+                <button class="action-btn share" onclick="shareChannel()" title="Share"><i class="fas fa-share-alt"></i></button>
             </div>
         </div>
+        <div id="server-list" class="server-selector" style="display:none;"></div>
     </div>
 
-    <!-- قسم التحكم -->
-    <div class="controls-area">
-        <div class="search-box">
-            <i class="fas fa-search search-icon"></i>
-            <input type="text" id="search-inp" class="search-input" placeholder="ابحث عن قناة..." onkeyup="filterChannels()">
+    <!-- 3. التنقل -->
+    <div class="nav-container">
+        <div class="category-scroll">
+            <div class="cat-tag active" onclick="filterBy('all', this)">الكل 🌏</div>
+            <div class="cat-tag special" onclick="filterBy('fav', this)"><i class="fas fa-heart"></i> المفضلة</div>
+            <div class="cat-tag" onclick="filterBy('sports', this)">⚽ رياضة</div>
+            <div class="cat-tag" onclick="filterBy('movies', this)">🎬 أفلام</div>
+            <div class="cat-tag" onclick="filterBy('news', this)">📰 أخبار</div>
+            <div class="cat-tag" onclick="filterBy('kids', this)">🧸 أطفال</div>
+            <div class="cat-tag" onclick="filterBy('religious', this)">🕌 إسلامي</div>
         </div>
-
-        <div class="categories">
-            <div class="cat-btn active" onclick="filterCat('all', this)">الكل</div>
-            <div class="cat-btn" onclick="filterCat('fav', this)">⭐ المفضلة</div>
-            <div class="cat-btn" onclick="filterCat('sports', this)">⚽ رياضة</div>
-            <div class="cat-btn" onclick="filterCat('news', this)">📰 أخبار</div>
-            <div class="cat-btn" onclick="filterCat('kids', this)">🧸 أطفال</div>
-            <div class="cat-btn" onclick="filterCat('movies', this)">🎬 أفلام</div>
-            <div class="cat-btn" onclick="filterCat('religious', this)">🕌 إسلامي</div>
-        </div>
-    </div>
-
-    <!-- شبكة القنوات -->
-    <div id="grid" class="grid-container">
-        <div class="loader-screen">
-            <i class="fas fa-circle-notch fa-spin fa-3x"></i>
-            <p>جاري جلب القنوات...</p>
+        <div class="search-container">
+            <input type="text" id="search-box" class="search-input" placeholder="🔍 ابحث عن قناة (مثال: MBC, Bein)..." onkeyup="handleSearch()">
         </div>
     </div>
 
-    <div id="toast" class="toast">تمت العملية بنجاح</div>
+    <!-- 4. الشبكة -->
+    <div id="channels-grid" class="grid-container">
+        <div class="system-msg"><i class="fas fa-spinner fa-spin fa-2x"></i><br>جاري جلب القنوات المحدثة...</div>
+    </div>
 
-    <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+    <div id="toast" class="toast"><i class="fas fa-check"></i> <span id="toast-msg">تم</span></div>
+
+    <script src="https://vjs.zencdn.net/7.20.3/video.js"></script>
     <script>
+        const player = videojs('tv-player');
         let allChannels = [];
-        let favorites = JSON.parse(localStorage.getItem('hamzaFavs')) || [];
-        let player = videojs('h-player', {
-            fluid: true,
-            html5: {
-                hls: { overrideNative: true },
-                nativeAudioTracks: false,
-                nativeVideoTracks: false
-            }
-        });
+        let favorites = JSON.parse(localStorage.getItem('ultimateFavs')) || [];
+        let currentChannel = null;
+        let brightnessLevel = 1;
 
-        // 1. التحميل الأولي
         window.onload = async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const sharedName = urlParams.get('ch');
+
             try {
-                // إضافة رقم عشوائي لتجنب الكاش
-                const res = await fetch('channels.json?t=' + Date.now());
-                if(!res.ok) throw new Error("فشل التحميل");
-                allChannels = await res.json();
+                // جلب ملف القنوات الذي ولده البايثون
+                // نضيف الوقت لمنع الكاش
+                const response = await fetch('channels.json?t=' + Date.now());
+                if (!response.ok) throw new Error("File not found");
+                
+                allChannels = await response.json();
                 renderChannels(allChannels);
-                showToast(`تم تحميل ${allChannels.length} قناة 📡`);
-            } catch (e) {
-                document.getElementById('grid').innerHTML = 
-                    `<div class="loader-screen">
-                        <i class="fas fa-exclamation-circle fa-3x" style="color:#e50914"></i>
-                        <p>حدث خطأ في تحميل القائمة. تأكد من الإنترنت.</p>
-                        <button onclick="location.reload()" style="margin-top:10px;padding:8px 20px;background:#333;border:none;color:white;border-radius:5px">تحديث</button>
-                    </div>`;
+                showToast(`تم تحميل ${allChannels.length} قناة بنجاح 🚀`, true);
+
+                if(sharedName) {
+                    const decoded = decodeURIComponent(sharedName);
+                    const ch = allChannels.find(c => c.name === decoded);
+                    if(ch) playChannel(ch);
+                }
+            } catch (err) {
+                console.error(err);
+                document.getElementById('channels-grid').innerHTML = 
+                    '<div class="system-msg" style="color:#e50914">لم يتم العثور على ملف القنوات. تأكد من عمل البوت (update.py).</div>';
             }
+            setupGestures();
+            setupShortcuts();
         };
 
-        // 2. عرض القنوات
         function renderChannels(list) {
-            const grid = document.getElementById('grid');
+            const grid = document.getElementById('channels-grid');
             grid.innerHTML = '';
-
-            if(list.length === 0) {
-                grid.innerHTML = '<div class="loader-screen">لا توجد قنوات مطابقة</div>';
+            
+            if (!list || list.length === 0) {
+                grid.innerHTML = '<div class="system-msg">لا توجد نتائج.</div>';
                 return;
             }
 
-            list.forEach(ch => {
+            const limit = Math.min(list.length, 250);
+            for (let i = 0; i < limit; i++) {
+                const ch = list[i];
+                const card = document.createElement('div');
+                card.className = 'card';
                 const isFav = favorites.includes(ch.name);
-                const div = document.createElement('div');
-                div.className = 'channel-card';
-                div.innerHTML = `
-                    <i class="fas fa-star fav-icon ${isFav ? 'active' : ''}" onclick="toggleFav(event, '${ch.name}')"></i>
-                    <img src="${ch.logo}" class="channel-logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2503/2503508.png'">
-                    <div class="channel-name">${ch.name}</div>
+                const logo = ch.logo && ch.logo.length > 5 ? ch.logo : 'https://cdn-icons-png.flaticon.com/512/2503/2503508.png';
+                
+                card.innerHTML = `
+                    <i class="fas fa-heart fav-heart ${isFav ? 'active' : ''}" onclick="toggleFav(event, '${ch.name.replace(/'/g, "\\'")}')"></i>
+                    <img src="${logo}" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2503/2503508.png'" loading="lazy">
+                    <div class="card-title">${ch.name}</div>
+                    ${ch.urls.length > 1 ? '<span style="font-size:10px; color:#46d369; margin-top:5px;">● سيرفرات متعددة</span>' : ''}
                 `;
-                div.onclick = (e) => {
-                    if(!e.target.classList.contains('fav-icon')) playChannel(ch);
-                };
-                grid.appendChild(div);
-            });
+                card.onclick = (e) => { if(!e.target.classList.contains('fav-heart')) playChannel(ch); };
+                grid.appendChild(card);
+            }
         }
 
-        // 3. تشغيل القناة (مع منطق ذكي للأخطاء)
         function playChannel(ch) {
-            document.getElementById('current-title').innerText = ch.name;
-            document.getElementById('current-status').innerText = "جاري الاتصال بالسيرفر...";
-            document.getElementById('live-badge').style.opacity = 0;
-            
-            // تمييز القناة النشطة
-            document.querySelectorAll('.channel-card').forEach(c => c.classList.remove('playing'));
-            
+            currentChannel = ch;
+            document.getElementById('channel-name').innerText = ch.name;
+            const status = document.getElementById('status-text');
+            status.innerText = 'جاري الاتصال...'; status.style.color = '#fff';
+
+            renderServers(ch);
+            playStream(ch.urls[0]);
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
 
-            let urlIndex = 0;
-            const tryStream = (index) => {
-                if (index >= ch.urls.length) {
-                    document.getElementById('current-status').innerHTML = "<span style='color:red'>عذراً، البث متوقف حالياً</span>";
-                    showToast("⚠️ جميع السيرفرات لا تعمل لهذه القناة");
-                    return;
-                }
+        function playStream(url) {
+            // كشف مشكلة Mixed Content
+            if (location.protocol === 'https:' && url.startsWith('http:')) {
+                showToast('⚠️ القناة غير مشفرة (HTTP) قد لا تعمل على اللابتوب', true);
+            }
+            player.src({ src: url, type: 'application/x-mpegURL' });
+            player.play().catch(e => console.log("Auto-play prevented"));
+        }
 
-                const url = ch.urls[index];
-                
-                // تحذير من بروتوكول HTTP اذا كان الموقع HTTPS
-                if(location.protocol === 'https:' && url.startsWith('http:')) {
-                     console.warn("Mixed Content Warning: Trying to play HTTP stream on HTTPS site");
-                }
-
-                player.src({ src: url, type: 'application/x-mpegURL' });
-                player.play().catch(e => console.log("Auto-play prevented"));
-
-                // التعامل مع الأخطاء
-                player.one('error', () => {
-                    console.log(`فشل الرابط ${index + 1}، تجربة التالي...`);
-                    tryStream(index + 1);
-                });
-            };
-
-            tryStream(0);
+        function renderServers(ch) {
+            const container = document.getElementById('server-list');
+            if(ch.urls.length > 1) {
+                container.style.display = 'flex';
+                container.innerHTML = ch.urls.map((url, i) => 
+                    `<button class="server-btn" onclick="playStream('${url}')">سيرفر ${i+1}</button>`
+                ).join('');
+            } else { container.style.display = 'none'; }
         }
 
         player.on('playing', () => {
-            document.getElementById('current-status').innerText = "جاري البث";
-            document.getElementById('live-badge').style.opacity = 1;
+            const s = document.getElementById('status-text'); s.innerText = 'بث مباشر 🔴'; s.style.color = 'var(--success)';
+        });
+        player.on('error', () => {
+            const s = document.getElementById('status-text'); s.innerText = 'خطأ في المصدر ⚠️'; s.style.color = 'red';
         });
 
-        // 4. وظائف البحث والفلترة والمفضلة
-        function filterChannels() {
-            const query = document.getElementById('search-inp').value.toLowerCase();
-            const filtered = allChannels.filter(ch => ch.name.toLowerCase().includes(query));
-            renderChannels(filtered);
+        // Gestures & Shortcuts
+        function setupGestures() {
+            let startY=0, startVol=1, startBright=1;
+            const hud = document.getElementById('gesture-feedback');
+
+            const left = document.getElementById('touch-left');
+            left.addEventListener('touchstart', e => { startY=e.touches[0].clientY; startBright=brightnessLevel; });
+            left.addEventListener('touchmove', e => {
+                e.preventDefault(); const d = startY - e.touches[0].clientY;
+                brightnessLevel = Math.min(1, Math.max(0.2, startBright + (d/300)));
+                document.getElementById('brightness-overlay').style.opacity = 1 - brightnessLevel;
+                showHud(`<i class="fas fa-sun"></i> ${Math.round(brightnessLevel*100)}%`);
+            });
+
+            const right = document.getElementById('touch-right');
+            right.addEventListener('touchstart', e => { startY=e.touches[0].clientY; startVol=player.volume(); });
+            right.addEventListener('touchmove', e => {
+                e.preventDefault(); const d = startY - e.touches[0].clientY;
+                const v = Math.min(1, Math.max(0, startVol + (d/300)));
+                player.volume(v);
+                showHud(`<i class="fas fa-volume-up"></i> ${Math.round(v*100)}%`);
+            });
         }
 
-        function filterCat(cat, btn) {
-            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+        function showHud(html) {
+            const hud = document.getElementById('gesture-feedback');
+            hud.innerHTML = html; hud.style.display = 'block';
+            clearTimeout(window.ht); window.ht = setTimeout(() => hud.style.display = 'none', 800);
+        }
+
+        function setupShortcuts() {
+            document.addEventListener('keydown', e => {
+                if(document.activeElement.tagName==='INPUT') return;
+                if(e.key===' ') { e.preventDefault(); player.paused()?player.play():player.pause(); }
+                if(e.key==='f') player.requestFullscreen();
+            });
+        }
+
+        // Helpers
+        function toggleFav(e, name) {
+            e.stopPropagation();
+            const idx = favorites.indexOf(name);
+            if(idx > -1) { favorites.splice(idx, 1); showToast('تم الحذف ❌'); }
+            else { favorites.push(name); showToast('تمت الإضافة ❤️'); }
+            localStorage.setItem('ultimateFavs', JSON.stringify(favorites));
+            if(document.querySelector('.cat-tag.special.active')) filterBy('fav', document.querySelector('.cat-tag.special'));
+            else e.target.classList.toggle('active');
+        }
+
+        function filterBy(cat, btn) {
+            document.querySelectorAll('.cat-tag').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            
             if (cat === 'all') renderChannels(allChannels);
             else if (cat === 'fav') renderChannels(allChannels.filter(c => favorites.includes(c.name)));
             else renderChannels(allChannels.filter(c => c.category === cat));
         }
 
-        function toggleFav(e, name) {
-            e.stopPropagation();
-            if (favorites.includes(name)) {
-                favorites = favorites.filter(n => n !== name);
-                showToast("تم الحذف من المفضلة ❌");
-            } else {
-                favorites.push(name);
-                showToast("تمت الإضافة للمفضلة ⭐");
-            }
-            localStorage.setItem('hamzaFavs', JSON.stringify(favorites));
-            e.target.classList.toggle('active');
-            
-            // إذا كنا في قسم المفضلة، أعد الرسم
-            if(document.querySelector('.cat-btn.active').innerText.includes('المفضلة')) {
-                renderChannels(allChannels.filter(c => favorites.includes(c.name)));
-            }
+        function handleSearch() {
+            const q = document.getElementById('search-box').value.toLowerCase();
+            renderChannels(allChannels.filter(c => c.name.toLowerCase().includes(q)));
         }
 
-        function showToast(msg) {
+        function showToast(msg, long=false) {
             const t = document.getElementById('toast');
-            t.innerText = msg;
+            document.getElementById('toast-msg').innerText = msg;
             t.classList.add('show');
-            setTimeout(() => t.classList.remove('show'), 3000);
+            setTimeout(() => t.classList.remove('show'), long?5000:2000);
+        }
+
+        function shareChannel() {
+            if(!currentChannel) return showToast("اختر قناة");
+            const u = `${location.origin}${location.pathname}?ch=${encodeURIComponent(currentChannel.name)}`;
+            navigator.clipboard.writeText(u).then(() => showToast("تم النسخ 🔗"));
+        }
+        
+        async function togglePiP() {
+            try { document.pictureInPictureElement?document.exitPictureInPicture():document.querySelector('video').requestPictureInPicture(); }
+            catch(e){ showToast("PiP غير مدعوم"); }
+        }
+
+        function setSleepTimer() {
+            const m = prompt("كم دقيقة؟");
+            if(m) { setTimeout(()=>player.pause(), m*60000); showToast(`الإغلاق بعد ${m} دقيقة`); }
         }
     </script>
 </body>
