@@ -4,40 +4,55 @@ import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ==========================================
-# 1. المصادر العملاقة (المستودعات الذكية)
+# 1. المصادر العملاقة (شاملة المنتديات والمجتمعات)
 # ==========================================
 URLS = [
-    # قوائم رسمية (لضمان الجودة)
+    # --- القوائم الرسمية والموثوقة ---
     "https://iptv-org.github.io/iptv/countries/jo.m3u",
     "https://iptv-org.github.io/iptv/countries/eg.m3u",
     "https://iptv-org.github.io/iptv/countries/sa.m3u",
     "https://iptv-org.github.io/iptv/countries/ae.m3u",
+    "https://iptv-org.github.io/iptv/countries/kw.m3u",
     
-    # قوائم ضخمة جداً (للبحث عن Xtream و القنوات المشفرة المفتوحة)
+    # --- قوائم التجميع الكبرى (يتم تحديثها من المنتديات) ---
     "https://iptv-org.github.io/iptv/languages/ara.m3u",
     "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+    "https://raw.githubusercontent.com/jnk22/kodirpo/master/iptv/arab.m3u",
     
-    # قوائم عالمية (سنبحث بداخلها عن قنوات محددة)
+    # --- قوائم المنصات العالمية (Samsung TV+, Pluto, Roku) ---
+    # هذه تحتوي على قنوات وثائقية وأطفال بجودة عالية جداً
+    "https://i.mjh.nz/SamsungTVPlus/all.m3u8",
+    "https://i.mjh.nz/PlutoTV/all.m3u8",
+    
+    # --- قوائم الفئات العالمية ---
     "https://iptv-org.github.io/iptv/categories/documentary.m3u",
     "https://iptv-org.github.io/iptv/categories/kids.m3u",
-    "https://iptv-org.github.io/iptv/categories/sports.m3u"
+    "https://iptv-org.github.io/iptv/categories/sports.m3u",
+    "https://iptv-org.github.io/iptv/categories/movies.m3u",
+    "https://iptv-org.github.io/iptv/categories/music.m3u"
 ]
 
-# الكلمات المفتاحية للقنوات التي نريد "صيدها" من القوائم العالمية
+# الكلمات المفتاحية للقنوات (Targets)
+# تم توسيعها لتشمل قنوات أكثر تنوعاً
 TARGETS = [
-    "mbc", "bein", "osn", "rotana", "art ", "shahid", "alkass", "ssc",
-    "national geo", "nat geo", "discovery", "animal planet",
-    "spacetoon", "cartoon network", "cn arabia", "nickelodeon",
-    "jordan", "roya", "mamlaka", "jazeera", "alarabiya"
+    # قنوات عربية كبرى
+    "mbc", "bein", "osn", "rotana", "art ", "shahid", "alkass", "ssc", "abudhabi", "dubai",
+    # قنوات وثائقية وعالمية
+    "national geo", "nat geo", "discovery", "animal planet", "history", "tlc", "investigation",
+    # أطفال
+    "spacetoon", "cartoon network", "cn arabia", "nickelodeon", "nick", "disney", "majid",
+    # أخبار وقنوات وطنية
+    "jordan", "roya", "mamlaka", "jazeera", "alarabiya", "skynews", "bbc",
+    # منصات
+    "samsung", "pluto", "rakuten"
 ]
 
 # ==========================================
-# 2. إعدادات الفحص (المحرك)
+# 2. إعدادات الفحص
 # ==========================================
-MAX_WORKERS = 30  # عدد الروبوتات الصغيرة التي تفحص في نفس الوقت (لزيادة السرعة)
-TIMEOUT = 4       # مدة الصبر على الرابط قبل اعتباره ميتاً (ثواني)
+MAX_WORKERS = 40  # زدنا عدد الروبوتات للسرعة
+TIMEOUT = 5       # زدنا وقت الانتظار قليلاً للقنوات البطيئة
 
-# تمويه الطلب (وكأنه متصفح حقيقي)
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
@@ -47,49 +62,83 @@ HEADERS = {
 # ==========================================
 
 def check_stream(url):
-    """وظيفة فحص الرابط: هل يعمل أم لا؟"""
+    """فحص ذكي: يتأكد أن الرابط يعمل وأنه فيديو فعلاً"""
     try:
-        # طلب خفيف (Stream) دون تحميل الفيديو كاملاً
         with requests.get(url, headers=HEADERS, stream=True, timeout=TIMEOUT) as r:
-            # نقبل الرابط إذا كان الكود 200 (OK) وكان المحتوى فيديو
             if r.status_code == 200:
-                return True
+                # تحقق إضافي: هل المحتوى فيديو؟
+                content_type = r.headers.get('Content-Type', '').lower()
+                if 'video' in content_type or 'mpegurl' in content_type or 'octet-stream' in content_type:
+                    return True
     except:
         return False
     return False
 
+def extract_quality(name):
+    """استخراج جودة القناة من الاسم"""
+    name = name.upper()
+    if "4K" in name: return "4K"
+    if "FHD" in name: return "FHD"
+    if "HD" in name: return "HD"
+    return "SD"
+
 def clean_name(name):
-    """تنظيف وتوحيد أسماء القنوات"""
+    """تنظيف وتوحيد الأسماء"""
     name = name.lower()
-    # إزالة الكلمات الزائدة
-    for w in ["hd", "sd", "fhd", "4k", "hevc", "ar", "arabic", "tv", "channel", "live", "stream", "+"]:
+    
+    # تنظيف الكلمات الزائدة
+    junk = ["hd", "sd", "fhd", "4k", "hevc", "ar", "arabic", "tv", "channel", "live", "stream", "+", "(", ")", "[", "]"]
+    for w in junk:
         name = name.replace(w, "")
+    
     # إزالة الرموز
     name = re.sub(r'[^a-z0-9]', '', name)
     
-    # توحيد الأسماء المشهورة
-    if "mbc" in name:
-        if "drama" in name: return "mbcdrama"
-        if "action" in name: return "mbcaction"
-        if "2" in name: return "mbc2"
-        if "3" in name: return "mbc3"
-        if "4" in name: return "mbc4"
-        if "masr" in name: return "mbcmasr"
-        if "iraq" in name: return "mbciraq"
-        if "booly" in name: return "mbcbollywood"
+    # توحيد المسميات (Mapping)
+    mappings = {
+        "mbc": ["mbc1", "mbcone"],
+        "mbcdrama": ["mbcdrama"],
+        "mbcaction": ["mbcaction"],
+        "mbc2": ["mbc2", "mbctwo"],
+        "mbc3": ["mbc3", "mbcthree"],
+        "mbc4": ["mbc4", "mbcfour"],
+        "mbcmasr": ["mbcmasr"],
+        "mbciraq": ["mbciraq"],
+        "mbcbollywood": ["mbcbollywood", "mbcbooly"],
+        "natgeo": ["nationalgeographic", "natgeo", "nationalgeo"],
+        "natgeowild": ["natgeowild", "wild"],
+        "jordantv": ["jordan", "aljordon", "alurdun"],
+        "roya": ["roya"],
+        "almamlaka": ["almamlaka", "mamlaka"],
+        "spacetoon": ["spacetoon"],
+        "beinsports": ["bein", "beinsport"],
+        "rotanacinema": ["rotanacinema"],
+        "rotanaclassic": ["rotanaclassic"]
+    }
     
-    if "national" in name or "nat" in name: return "natgeo"
-    if "jordan" in name: return "jordantv"
-    
+    for unified, variants in mappings.items():
+        if any(v in name for v in variants):
+            return unified
+            
     return name
 
-def get_cat(name):
+def get_cat(name, url=""):
+    """تحديد التصنيف بناءً على الاسم والرابط"""
     n = name.lower()
-    if "sport" in n or "koora" in n or "bein" in n: return "sports"
-    if "news" in n or "jazeera" in n or "arabia" in n: return "news"
-    if "kid" in n or "cartoon" in n or "spacetoon" in n: return "kids"
-    if "movi" in n or "cinema" in n or "film" in n or "rotana" in n or "mbc 2" in n: return "movies"
-    if "docu" in n or "geo" in n or "wild" in n or "planet" in n: return "docu"
+    u = url.lower()
+    
+    # تحليل الرابط (ميزة جديدة)
+    if "samsung" in u: return "samsung"
+    
+    # تحليل الاسم
+    if "sport" in n or "koora" in n or "bein" in n or "alkass" in n or "ssc" in n: return "sports"
+    if "news" in n or "jazeera" in n or "arabia" in n or "bbc" in n or "sky" in n: return "news"
+    if "kid" in n or "cartoon" in n or "spacetoon" in n or "nick" in n or "disney" in n: return "kids"
+    if "movi" in n or "cinema" in n or "film" in n or "rotana" in n or "mbc 2" in n or "drama" in n: return "movies"
+    if "docu" in n or "geo" in n or "wild" in n or "planet" in n or "history" in n: return "docu"
+    if "music" in n or "radio" in n: return "music"
+    if "quran" in n or "sunna" in n: return "religious"
+    
     return "general"
 
 # ==========================================
@@ -97,11 +146,11 @@ def get_cat(name):
 # ==========================================
 def update():
     all_candidates = []
-    print("📡 جاري سحب القوائم الضخمة والبحث عن القنوات...")
+    print("🚀 بدء تشغيل المحرك الذكي (V5.0)... البحث في المصادر المجتمعية والرسمية...")
 
     for url in URLS:
         try:
-            resp = requests.get(url, timeout=15)
+            resp = requests.get(url, timeout=20) # زيادة الوقت للقوائم الكبيرة
             resp.encoding = 'utf-8'
             lines = resp.text.split('\n')
             
@@ -109,48 +158,50 @@ def update():
             for line in lines:
                 line = line.strip()
                 if line.startswith("#EXTINF"):
-                    # استخراج البيانات
+                    # استخراج الاسم
                     name_m = re.search(r'tvg-name="([^"]+)"', line) or re.search(r',(.*)', line)
                     name = name_m.group(1).strip() if name_m else "Unknown"
                     
+                    # استخراج الشعار
                     logo_m = re.search(r'tvg-logo="([^"]+)"', line)
                     logo = logo_m.group(1) if logo_m else ""
                     
-                    # هل القناة عربية أو من القنوات المستهدفة؟
-                    is_arab_source = "ara.m3u" in url or "jo.m3u" in url or "eg.m3u" in url or "sa.m3u" in url
-                    is_target = any(t in name.lower() for t in TARGETS)
+                    # فلترة ذكية
+                    is_arab_list = "ara.m3u" in url or "jo.m3u" in url or "eg.m3u" in url or "sa.m3u" in url
+                    is_target_keyword = any(t in name.lower() for t in TARGETS)
                     
-                    if is_arab_source or is_target:
+                    # نقبل القناة إذا كانت من قائمة عربية، أو إذا كان اسمها مطلوباً
+                    if is_arab_list or is_target_keyword:
                         meta = {"name": name, "logo": logo}
                     else:
-                        meta = {} # تجاهل القنوات غير المهمة
+                        meta = {} 
                         
                 elif line.startswith("http") and meta:
-                    if not line.endswith(".ts"): # نتجنب ملفات التقطيع الصغيرة
+                    if not line.endswith(".ts"):
                         all_candidates.append({
                             "name": meta['name'],
                             "logo": meta['logo'],
-                            "url": line
+                            "url": line,
+                            "quality": extract_quality(meta['name']) # ميزة جديدة
                         })
                     meta = {}
         except Exception as e:
-            print(f"⚠️ خطأ في المصدر {url}: {e}")
+            print(f"⚠️ تجاوز المصدر {url}: {e}")
 
-    print(f"📦 وجدنا {len(all_candidates)} رابط محتمل. بدء الفحص الذكي (هذا سيأخذ وقتاً)...")
+    print(f"📦 تم تجميع {len(all_candidates)} رابط. بدء الفحص الدقيق...")
 
-    # تجميع الروابط الفريدة للفحص (لعدم فحص نفس الرابط مرتين)
+    # تجميع وفحص الروابط
     unique_links = set(c['url'] for c in all_candidates)
     working_links = set()
 
-    # --- الفحص المتوازي (Multi-threading) ---
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_to_url = {executor.submit(check_stream, url): url for url in unique_links}
         
-        checked_count = 0
+        checked = 0
         for future in as_completed(future_to_url):
             url = future_to_url[future]
-            checked_count += 1
-            if checked_count % 50 == 0: print(f"⏳ تم فحص {checked_count}/{len(unique_links)}...")
+            checked += 1
+            if checked % 100 == 0: print(f"✨ تم فحص {checked}/{len(unique_links)}...")
             
             try:
                 if future.result():
@@ -158,9 +209,9 @@ def update():
             except:
                 pass
 
-    print(f"✅ انتهى الفحص. الروابط العاملة فعلياً: {len(working_links)}")
+    print(f"✅ تم تأكيد عمل {len(working_links)} رابط.")
 
-    # بناء القائمة النهائية
+    # بناء الهيكل النهائي
     final_channels = {}
     
     for item in all_candidates:
@@ -168,40 +219,46 @@ def update():
             cid = clean_name(item['name'])
             
             if cid not in final_channels:
+                # تحسين الاسم للعرض
+                display_name = item['name']
+                # إذا كان الاسم بالانجليزي، نجعله Capitalized
+                if re.match(r'^[a-zA-Z0-9\s]+$', display_name):
+                    display_name = display_name.title()
+                
+                # تصحيح خاص لـ MBC
+                if "mbc" in cid and "drama" not in cid and "action" not in cid: display_name = display_name.upper()
+
                 final_channels[cid] = {
-                    "name": item['name'],
+                    "name": display_name,
                     "logo": item['logo'],
-                    "category": get_category(item['name']),
-                    "urls": []
+                    "category": get_cat(item['name'], item['url']),
+                    "urls": [],
+                    "quality": item['quality']
                 }
             
-            # إضافة الرابط للقناة
             if item['url'] not in final_channels[cid]['urls']:
                 final_channels[cid]['urls'].append(item['url'])
-                # تحديث اللوجو إذا كان القديم فارغاً
                 if not final_channels[cid]['logo'] and item['logo']:
                     final_channels[cid]['logo'] = item['logo']
 
-    # تحويل لقائمة وترتيب
-    output_list = list(final_channels.values())
-    
-    # تنظيف القنوات بدون روابط (احتياط)
-    output_list = [c for c in output_list if c['urls']]
+    # تحويل للقائمة النهائية
+    output = list(final_channels.values())
+    output = [c for c in output if c['urls']]
 
-    # ترتيب الأولويات
-    priority = ["Jordan", "Roya", "Mamlaka", "MBC", "Jazeera", "BeIN", "Nat Geo"]
+    # ترتيب الأولويات (الأردنية والعربية أولاً)
+    priority = ["Jordan", "Roya", "Mamlaka", "MBC", "Al Jazeera", "BeIN", "Nat Geo"]
     def sort_logic(c):
         n = c['name'].lower()
         for i, p in enumerate(priority):
             if p.lower() in n: return i
         return 100
 
-    output_list.sort(key=sort_logic)
+    output.sort(key=sort_logic)
 
-    print(f"🎉 تم حفظ {len(output_list)} قناة مؤكدة.")
+    print(f"🎉 الإنجاز: {len(output)} قناة جاهزة للبث.")
     
     with open("channels.json", "w", encoding="utf-8") as f:
-        json.dump(output_list, f, ensure_ascii=False, indent=2)
+        json.dump(output, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
     update()
