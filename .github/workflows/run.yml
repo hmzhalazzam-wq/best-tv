@@ -1,0 +1,24 @@
+name: Daily Update
+on:
+  schedule:
+    - cron: '0 5 * * *' # يحدث الروابط كل يوم الفجر
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - run: pip install requests
+      - run: python update.py
+      - run: |
+          git config --global user.name 'Bot'
+          git config --global user.email 'bot@bot.com'
+          git add channels.json
+          git commit -m "Update" || exit 0
+          git push
