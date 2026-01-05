@@ -26,19 +26,16 @@ def update():
                 line = line.strip()
                 if line.startswith("#EXTINF"):
                     # استخراج المعلومات
-                    # 1. الاسم
                     name_match = re.search(r'tvg-name="([^"]+)"', line) or re.search(r',(.*)', line)
                     name = name_match.group(1).strip() if name_match else "Unknown Channel"
                     
-                    # 2. الشعار
                     logo_match = re.search(r'tvg-logo="([^"]+)"', line)
                     logo = logo_match.group(1) if logo_match else ""
                     
-                    # 3. التصنيف (Group)
                     group_match = re.search(r'group-title="([^"]+)"', line)
                     group = group_match.group(1).lower() if group_match else "other"
                     
-                    # تنظيف التصنيفات (توحيد المسميات)
+                    # تنظيف التصنيفات
                     if "news" in group: category = "news"
                     elif "sport" in group: category = "sports"
                     elif "movie" in group or "cinema" in group or "film" in group: category = "movies"
@@ -55,33 +52,32 @@ def update():
                     }
                     
                 elif line.startswith("http") and current_ch:
-                    # إضافة القناة فقط إذا لم تكن موجودة مسبقاً (لتفادي التكرار)
-                    # وفقط إذا كان الرابط يبدو صالحاً
                     if current_ch['name'] not in seen_names:
                         current_ch['url'] = line
                         channels.append(current_ch)
                         seen_names.add(current_ch['name'])
-                    current_ch = {} # تصفير
+                    current_ch = {} 
 
         except Exception as e:
             print(f"Error reading {url}: {e}")
 
-    # ترتيب القنوات: القنوات المهمة أولاً ثم الباقي
-    # نضع القنوات الأردنية والجزيرة في البداية يدوياً
+    # ترتيب القنوات
     priority = ["Jordan TV", "Al Mamlaka", "Roya", "Al Jazeera", "MBC", "Spacetoon"]
     
     def sort_key(ch):
         for index, p in enumerate(priority):
             if p.lower() in ch['name'].lower():
                 return index
-        return 999 # الباقي في النهاية
+        return 999 
 
     channels.sort(key=sort_key)
 
     # حفظ الملف
     with open("channels.json", "w", encoding="utf-8") as f:
         json.dump(channels, f, ensure_ascii=False, indent=2)
+        
+    return channels # هذا هو التعديل المهم
 
 if __name__ == "__main__":
-    update()
+    channels = update() # استقبال النتيجة هنا
     print(f"تمت العملية! تم جلب {len(channels)} قناة عربية.")
