@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تلفزيون حمزة</title>
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        body { background: #111; color: white; text-align: center; font-family: sans-serif; margin: 0; padding: 20px; }
+        video { width: 100%; max-width: 800px; border: 2px solid #00ffcc; border-radius: 10px; }
+        .btn-container { margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        button { padding: 15px; font-size: 16px; background: #333; color: #fff; border: 1px solid #555; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #00ffcc; color: #000; }
+    </style>
+</head>
+<body>
+    <h2>🔴 بث مباشر</h2>
+    <video id="video" controls autoplay></video>
+    <div id="list" class="btn-container">جاري تحميل القنوات...</div>
+
+    <script>
+        fetch('channels.json').then(r => r.json()).then(data => {
+            const list = document.getElementById('list');
+            list.innerHTML = "";
+            data.forEach(ch => {
+                let btn = document.createElement('button');
+                btn.innerText = ch.name;
+                btn.onclick = () => play(ch.url);
+                list.appendChild(btn);
+            });
+        }).catch(() => document.getElementById('list').innerText = "يرجى الانتظار قليلاً حتى يعمل الروبوت لأول مرة..");
+
+        function play(url) {
+            var video = document.getElementById('video');
+            if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(url);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function() { video.play(); });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = url;
+                video.play();
+            }
+        }
+    </script>
+</body>
+</html>
