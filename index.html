@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hamza TV Platinum</title>
+    <title>Hamza TV Ultimate</title>
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#00b3ff">
-    
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <meta name="theme-color" content="#1a1a1a">
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;900&display=swap" rel="stylesheet">
     
-    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500;800&display=swap" rel="stylesheet">
-    
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCNJRN7GQ6"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -22,188 +21,192 @@
     </script>
 
     <style>
-        :root { --main-color: #00b3ff; --bg-color: #0a0a0a; --card-bg: #161616; }
-        body { background-color: var(--bg-color); color: #fff; font-family: 'Alexandria', sans-serif; margin: 0; padding-bottom: 80px; }
+        :root { --primary: #e50914; --bg: #0f0f0f; --text: #fff; }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: none; }
+        body { background: var(--bg); color: var(--text); font-family: 'Cairo', sans-serif; margin: 0; padding-bottom: 80px; }
         
-        /* الهيدر */
-        .header { padding: 15px; position: sticky; top: 0; background: rgba(10,10,10,0.95); z-index: 50; border-bottom: 1px solid #222; backdrop-filter: blur(10px); display: flex; align-items: center; gap: 10px; }
-        .search-container { flex-grow: 1; position: relative; }
-        .search-input { width: 100%; background: #222; border: 1px solid #333; padding: 10px 40px 10px 15px; border-radius: 12px; color: white; font-family: inherit; }
-        .search-input:focus { border-color: var(--main-color); outline: none; }
-        
-        /* التصنيفات */
-        .tags-bar { display: flex; gap: 8px; overflow-x: auto; padding: 15px; scrollbar-width: none; }
-        .tags-bar::-webkit-scrollbar { display: none; }
-        .tag { background: #222; padding: 8px 16px; border-radius: 30px; font-size: 13px; cursor: pointer; white-space: nowrap; transition: 0.3s; border: 1px solid transparent; }
-        .tag.active { background: var(--main-color); color: black; font-weight: bold; box-shadow: 0 0 15px rgba(0, 179, 255, 0.4); }
+        /* Hero Section (البانر الكبير) */
+        .hero { height: 40vh; max-height: 400px; position: relative; display: flex; align-items: flex-end; padding: 20px; background: linear-gradient(to top, #0f0f0f, transparent), url('https://wallpaperaccess.com/full/2157022.jpg'); background-size: cover; background-position: center; }
+        .hero-content { z-index: 2; width: 100%; }
+        .hero-title { font-size: 2.5rem; margin: 0; font-weight: 900; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+        .hero-desc { font-size: 0.9rem; color: #ddd; margin: 5px 0 15px 0; max-width: 80%; }
+        .hero-btn { background: var(--primary); color: white; border: none; padding: 10px 25px; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 1rem; display: inline-flex; align-items: center; gap: 5px; transition: 0.3s; }
+        .hero-btn:hover { transform: scale(1.05); }
 
-        /* شبكة القنوات */
-        .channels-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px; padding: 15px; }
-        .channel-card { background: var(--card-bg); border-radius: 12px; padding: 15px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 140px; position: relative; cursor: pointer; border: 1px solid #222; transition: 0.3s; }
-        .channel-card:hover { transform: translateY(-5px); border-color: var(--main-color); background: #202020; }
-        .channel-logo { width: 60px; height: 60px; object-fit: contain; margin-bottom: 10px; border-radius: 50%; background: #fff; padding: 5px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
-        .channel-name { font-size: 12px; text-align: center; color: #ccc; margin: 0; line-height: 1.4; }
-        
-        /* أيقونة المفضلة والروابط */
-        .fav-heart { position: absolute; top: 8px; left: 8px; font-size: 18px; color: #444; z-index: 2; transition: 0.2s; }
-        .fav-heart.active { color: #ff0055; transform: scale(1.2); }
-        .badge { position: absolute; bottom: 8px; right: 8px; font-size: 10px; background: #333; padding: 2px 6px; border-radius: 4px; color: #888; }
-        
-        /* نافذة المشغل */
-        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 100; display: none; align-items: center; justify-content: center; flex-direction: column; }
-        .video-wrapper { width: 100%; max-width: 900px; padding: 10px; }
-        .close-btn { position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.15); color: white; border: none; padding: 8px 20px; border-radius: 30px; cursor: pointer; z-index: 101; backdrop-filter: blur(5px); font-weight: bold; }
-        .status-text { margin-top: 10px; color: #888; font-size: 14px; }
-        
-        /* تصميم Plyr المخصص */
-        .plyr { border-radius: 10px; overflow: hidden; box-shadow: 0 0 50px rgba(0, 179, 255, 0.1); --plyr-color-main: #00b3ff; }
+        /* Search & Cats */
+        .controls { position: sticky; top: 0; background: rgba(15,15,15,0.95); backdrop-filter: blur(10px); z-index: 50; padding: 10px 0; border-bottom: 1px solid #333; }
+        .search-box { width: 90%; margin: 0 auto 10px auto; display: block; padding: 12px; border-radius: 8px; border: 1px solid #333; background: #222; color: white; font-family: inherit; }
+        .cats { display: flex; gap: 10px; overflow-x: auto; padding: 0 15px 10px 15px; scrollbar-width: none; }
+        .chip { background: #333; padding: 6px 16px; border-radius: 20px; font-size: 13px; cursor: pointer; white-space: nowrap; transition: 0.3s; border: 1px solid transparent; color: #ccc; }
+        .chip.active { background: white; color: black; font-weight: bold; }
+
+        /* Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; padding: 15px; }
+        .card { background: #1a1a1a; border-radius: 8px; padding: 10px; position: relative; cursor: pointer; transition: 0.3s; border: 1px solid transparent; display: flex; flex-direction: column; align-items: center; height: 140px; }
+        .card:hover { border-color: #555; background: #252525; }
+        .logo-wrapper { width: 60px; height: 60px; background: white; border-radius: 50%; padding: 5px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .card img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .card h3 { font-size: 12px; text-align: center; margin: 0; color: #eee; line-height: 1.3; }
+        .live-badge { position: absolute; top: 8px; left: 8px; width: 8px; height: 8px; background: #00ff00; border-radius: 50%; box-shadow: 0 0 10px #00ff00; }
+        .fav-btn { position: absolute; top: 5px; right: 5px; font-size: 18px; color: #444; z-index: 2; padding: 5px; }
+        .fav-btn.active { color: var(--primary); }
+
+        /* Player Modal */
+        .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 1000; display: none; flex-direction: column; justify-content: center; }
+        .modal-header { position: absolute; top: 0; width: 100%; padding: 20px; display: flex; justify-content: space-between; z-index: 1001; background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent); }
+        .close-btn { color: white; background: rgba(255,255,255,0.2); border: none; padding: 8px 15px; border-radius: 20px; cursor: pointer; font-weight: bold; backdrop-filter: blur(5px); }
+        .status { position: absolute; bottom: 30px; width: 100%; text-align: center; color: #888; font-size: 14px; }
+
+        /* Loading */
+        .loader { text-align: center; padding: 50px; color: #666; }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <div class="search-container">
-            <input type="text" class="search-input" id="search" placeholder="ابحث عن قناة..." onkeyup="filterChannels()">
+    <!-- البانر المتحرك -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">بث مباشر</h1>
+            <p class="hero-desc">شاهد آلاف القنوات العربية والعالمية، مباريات، أفلام، والمزيد في مكان واحد.</p>
+            <button class="hero-btn" onclick="document.querySelector('.controls').scrollIntoView({behavior:'smooth'})">
+                ▶ ابدأ المشاهدة
+            </button>
         </div>
     </div>
 
-    <div class="tags-bar">
-        <div class="tag active" onclick="filterCat('all', this)">الكل</div>
-        <div class="tag" onclick="filterCat('fav', this)">❤️ المفضلة</div>
-        <div class="tag" onclick="filterCat('sports', this)">⚽ رياضة</div>
-        <div class="tag" onclick="filterCat('news', this)">📰 أخبار</div>
-        <div class="tag" onclick="filterCat('movies', this)">🎬 أفلام</div>
-        <div class="tag" onclick="filterCat('kids', this)">🧸 أطفال</div>
-        <div class="tag" onclick="filterCat('docu', this)">🦁 وثائقي</div>
+    <div class="controls">
+        <input type="text" class="search-box" id="search" placeholder="🔍 ابحث عن قناة..." onkeyup="filter()">
+        <div class="cats">
+            <div class="chip active" onclick="setCat('all', this)">الكل</div>
+            <div class="chip" onclick="setCat('fav', this)">❤️ المفضلة</div>
+            <div class="chip" onclick="setCat('sports', this)">⚽ رياضة</div>
+            <div class="chip" onclick="setCat('news', this)">📰 أخبار</div>
+            <div class="chip" onclick="setCat('movies', this)">🎬 أفلام</div>
+            <div class="chip" onclick="setCat('kids', this)">🧸 أطفال</div>
+            <div class="chip" onclick="setCat('docu', this)">🌍 وثائقي</div>
+        </div>
     </div>
 
-    <div class="channels-grid" id="grid"></div>
-    <div style="text-align:center; padding:40px; color:#555;" id="msg">جاري تحميل القنوات...</div>
+    <div class="grid" id="grid"></div>
+    <div class="loader" id="loader">جاري جلب القنوات...</div>
 
-    <div class="overlay" id="player-modal">
-        <button class="close-btn" onclick="closePlayer()">✕ خروج</button>
-        <div class="video-wrapper">
-            <video id="player" playsinline controls></video>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <span style="color:white; font-weight:bold; margin-top:5px;" id="playing-name"></span>
+            <button class="close-btn" onclick="closePlayer()">✕ إغلاق</button>
         </div>
-        <div class="status-text" id="status">جاري الاتصال...</div>
+        <video id="player" playsinline controls></video>
+        <div class="status" id="status"></div>
     </div>
 
     <script>
         let allData = [];
-        let favs = JSON.parse(localStorage.getItem('favs_v4')) || [];
-        let player; // متغير المشغل
+        let favs = JSON.parse(localStorage.getItem('favs_v5')) || [];
+        let player;
 
-        // تهيئة المشغل مرة واحدة عند التحميل
         document.addEventListener('DOMContentLoaded', () => {
-            player = new Plyr('#player', {
-                controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'settings', 'pip', 'fullscreen'],
-                settings: ['quality', 'speed']
-            });
+            player = new Plyr('#player', { controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'] });
         });
 
-        // جلب البيانات
-        fetch('channels.json?' + Date.now())
-            .then(r => r.json())
-            .then(data => {
-                allData = data;
-                document.getElementById('msg').style.display = 'none';
-                render(allData);
-            })
-            .catch(() => document.getElementById('msg').innerText = "خطأ في تحميل القائمة، تأكد من تشغيل البوت.");
+        fetch('channels.json?' + Date.now()).then(r => r.json()).then(d => {
+            allData = d;
+            document.getElementById('loader').style.display = 'none';
+            render(allData);
+            
+            // تحديث البانر بقناة عشوائية (حركة جمالية)
+            let randomCh = allData[Math.floor(Math.random() * allData.length)];
+            if(randomCh && randomCh.logo) {
+                // يمكن مستقبلاً وضع صورة الخلفية هنا
+            }
+        });
 
         function render(list) {
             const grid = document.getElementById('grid');
             grid.innerHTML = "";
-            list.slice(0, 150).forEach(ch => {
+            list.slice(0, 300).forEach(ch => {
                 let isFav = favs.includes(ch.name);
+                // استخدام صورة افتراضية أنيقة إذا لم توجد صورة
                 let logo = ch.logo || "https://cdn-icons-png.flaticon.com/512/2503/2503508.png";
-                let count = ch.urls.length;
                 
                 let div = document.createElement('div');
-                div.className = 'channel-card';
+                div.className = 'card';
                 div.innerHTML = `
-                    <div class="fav-heart ${isFav ? 'active' : ''}" onclick="toggleFav('${ch.name}', event)">♥</div>
-                    <img src="${logo}" class="channel-logo" loading="lazy" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2503/2503508.png'">
-                    <h3 class="channel-name">${ch.name}</h3>
-                    <span class="badge">${count} سيرفر</span>
+                    <div class="live-badge"></div>
+                    <div class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav('${ch.name}', event)">♥</div>
+                    <div class="logo-wrapper"><img src="${logo}" loading="lazy" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2503/2503508.png'"></div>
+                    <h3>${ch.name}</h3>
                 `;
-                div.onclick = (e) => { if(!e.target.classList.contains('fav-heart')) openChannel(ch); };
+                div.onclick = (e) => { if(!e.target.classList.contains('fav-btn')) openPlayer(ch); };
                 grid.appendChild(div);
             });
         }
 
-        // --- منطق التشغيل الذكي والتبديل التلقائي ---
-        function openChannel(ch) {
-            document.getElementById('player-modal').style.display = 'flex';
+        function openPlayer(ch) {
+            document.getElementById('modal').style.display = 'flex';
+            document.getElementById('playing-name').innerText = ch.name;
+            let urls = ch.urls;
+            let idx = 0;
             const status = document.getElementById('status');
             const video = document.getElementById('player');
-            
-            let urls = ch.urls;
-            let currentIdx = 0;
 
-            function tryUrl() {
-                if(currentIdx >= urls.length) {
-                    status.innerText = "❌ جميع روابط هذه القناة متوقفة حالياً.";
+            function playNext() {
+                if(idx >= urls.length) {
+                    status.innerText = "❌ نعتذر، البث غير متاح حالياً";
                     return;
                 }
-                
-                let url = urls[currentIdx];
-                status.innerText = `⏳ تجربة السيرفر رقم ${currentIdx + 1} من ${urls.length}...`;
-                
+                status.innerText = `جاري تجربة المصدر ${idx + 1}...`;
+                let url = urls[idx];
+
                 if (Hls.isSupported()) {
                     let hls = new Hls();
                     hls.loadSource(url);
                     hls.attachMedia(video);
-                    
                     hls.on(Hls.Events.MANIFEST_PARSED, () => {
-                        status.innerText = "✅ تم التشغيل!";
+                        status.innerText = "";
                         player.play();
                     });
-                    
-                    // إذا حدث خطأ، انتقل فوراً للرابط التالي
-                    hls.on(Hls.Events.ERROR, (event, data) => {
-                        if (data.fatal) {
-                            console.log("فشل الرابط، الانتقال للتالي...");
+                    hls.on(Hls.Events.ERROR, (e, data) => {
+                        if(data.fatal) {
                             hls.destroy();
-                            currentIdx++;
-                            tryUrl();
+                            idx++;
+                            playNext();
                         }
                     });
                 } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
                     video.src = url;
                     video.play();
-                    // محاولة بسيطة للآيفون
-                    video.onerror = () => {
-                        currentIdx++;
-                        tryUrl();
-                    };
+                    video.onerror = () => { idx++; playNext(); };
                 }
             }
-            tryUrl();
+            playNext();
         }
 
         function closePlayer() {
-            document.getElementById('player-modal').style.display = 'none';
+            document.getElementById('modal').style.display = 'none';
             player.stop();
         }
 
-        // وظائف الواجهة (بحث، مفضلة، فلتر)
         function toggleFav(name, e) {
             e.stopPropagation();
             if(favs.includes(name)) favs = favs.filter(n => n !== name);
             else favs.push(name);
-            localStorage.setItem('favs_v4', JSON.stringify(favs));
-            render(allData); // تحديث سريع
+            localStorage.setItem('favs_v5', JSON.stringify(favs));
+            let activeCat = document.querySelector('.chip.active').innerText;
+            if(activeCat.includes("المفضلة")) {
+                 render(allData.filter(x => favs.includes(x.name)));
+            } else {
+                 e.target.classList.toggle('active');
+            }
         }
 
-        function filterCat(cat, btn) {
-            document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
+        function setCat(cat, btn) {
+            document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
             btn.classList.add('active');
             let res = (cat === 'all') ? allData : (cat === 'fav') ? allData.filter(x => favs.includes(x.name)) : allData.filter(x => x.category === cat);
             render(res);
         }
 
-        function filterChannels() {
+        function filter() {
             let q = document.getElementById('search').value.toLowerCase();
             render(allData.filter(x => x.name.toLowerCase().includes(q)));
         }
