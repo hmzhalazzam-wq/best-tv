@@ -2,82 +2,124 @@ import requests
 import json
 import re
 
-# المصدر: كل القنوات العربية + القنوات الأردنية
-URLS = [
+# مصادر ضخمة (عربي، أردني، قنوات دولية، وقنوات رياضية)
+SOURCES = [
     "https://iptv-org.github.io/iptv/languages/ara.m3u",
-    "https://iptv-org.github.io/iptv/countries/jo.m3u"
+    "https://iptv-org.github.io/iptv/countries/jo.m3u",
+    "https://iptv-org.github.io/iptv/categories/news.m3u",   # أخبار عالمية
+    "https://iptv-org.github.io/iptv/categories/movies.m3u" # أفلام عالمية
 ]
 
-def update():
-    channels = []
-    seen_names = set() # لمنع تكرار القنوات بنفس الاسم
+# دالة ذكية لتوحيد الأسماء (مثلاً: MBC 2 HD تصبح mbc2)
+def normalize_name(name):
+    name = name.lower()
+    # إزالة الكلمات الزائدة لضمان التطابق
+    for word in ["hd", "sd", "fhd", "4k", "tv", "live", "channel", "ar", "arabic"]:
+        name = name.replace(word, "")
+    # إزالة الرموز والمسافات
+    name = re.sub(r'[^a-z0-9]', '', name)
+    return name
 
-    print("جاري سحب كافة القنوات العربية...")
-    
-    for url in URLS:
+def update():
+    channels_map = {} # القاموس الذكي لدمج القنوات
+    print("🚀 جاري تشغيل الخوارزمية الذكية لجلب القنوات...")
+
+    for url in SOURCES:
         try:
-            response = requests.get(url)
-            response.encoding = 'utf-8' # ضمان قراءة اللغة العربية صح
-            lines = response.text.split('\n')
+            print(f"🔍 فحص المصدر: {url}")
+            resp = requests.get(url, timeout=10)
+            resp.encoding = 'utf-8'
+            lines = resp.text.split('\n')
             
-            current_ch = {}
+            current_info = {}
             
             for line in lines:
                 line = line.strip()
                 if line.startswith("#EXTINF"):
-                    # استخراج المعلومات
+                    # استخراج الاسم الخام
                     name_match = re.search(r'tvg-name="([^"]+)"', line) or re.search(r',(.*)', line)
-                    name = name_match.group(1).strip() if name_match else "Unknown Channel"
+                    raw_name = name_match.group(1).strip() if name_match else "Unknown"
                     
+                    # استخراج الشعار
                     logo_match = re.search(r'tvg-logo="([^"]+)"', line)
                     logo = logo_match.group(1) if logo_match else ""
                     
+                    # استخراج التصنيف
                     group_match = re.search(r'group-title="([^"]+)"', line)
                     group = group_match.group(1).lower() if group_match else "other"
                     
-                    # تنظيف التصنيفات
-                    if "news" in group: category = "news"
-                    elif "sport" in group: category = "sports"
-                    elif "movie" in group or "cinema" in group or "film" in group: category = "movies"
-                    elif "kid" in group or "cartoon" in group: category = "kids"
-                    elif "religious" in group or "islam" in group: category = "religious"
-                    elif "music" in group: category = "music"
-                    elif "documentary" in group: category = "docu"
-                    else: category = "general"
-
-                    current_ch = {
-                        "name": name,
+                    # الفلترة الذكية: نقبل القناة فقط إذا كانت عربية أو من المصادر العربية
+                    # أو إذا كان اسمها يحتوي على كلمات عربية
+                    is_arabic_source = "ara.m3u" in url or "jo.m3u" in url
+                    
+                    current_info = {
+                        "raw_name": raw_name,
                         "logo": logo,
-                        "category": category
+                        "group": group,
+                        "is_valid": is_arabic_source # مبدئياً
                     }
                     
-                elif line.startswith("http") and current_ch:
-                    if current_ch['name'] not in seen_names:
-                        current_ch['url'] = line
-                        channels.append(current_ch)
-                        seen_names.add(current_ch['name'])
-                    current_ch = {} 
+                elif line.startswith("http") and current_info:
+                    # التحقق الإضافي للقنوات من مصادر عالمية (يجب أن تكون عربية)
+                    if not current_info['is_valid']:
+                        # إذا المصدر أجنبي، نفحص هل القناة عربية؟
+                        if "arab" in current_info['raw_name'].lower() or "al " in current_info['raw_name'].lower():
+                            current_info['is_valid'] = True
+
+                    if current_info['is_valid']:
+                        # التطبيع: تحويل الاسم لصيغة موحدة للكشف عن التكرار
+                        clean_id = normalize_name(current_info['raw_name'])
+                        
+                        if clean_id not in channels_map:
+                            # قناة جديدة
+                            # تحديد التصنيف
+                            cat = "general"
+                            g = current_info['group'] + " " + current_info['raw_name'].lower()
+                            if "sport" in g: cat = "sports"
+                            elif "news" in g: cat = "news"
+                            elif "kid" in g or "cartoon" in g: cat = "kids"
+                            elif "movi" in g or "cinema" in g or "film" in g: cat = "movies"
+                            elif "relig" in g or "qura" in g: cat = "religious"
+                            
+                            channels_map[clean_id] = {
+                                "name": current_info['raw_name'], # نحتفظ بأول اسم وجدناه
+                                "logo": current_info['logo'],
+                                "category": cat,
+                                "urls": [] # قائمة الروابط (نظام النسخ الاحتياطي)
+                            }
+                        
+                        # إضافة الرابط للقائمة (إذا لم يكن موجوداً)
+                        if line not in channels_map[clean_id]['urls']:
+                            channels_map[clean_id]['urls'].append(line)
+                            
+                    current_info = {}
 
         except Exception as e:
-            print(f"Error reading {url}: {e}")
+            print(f"❌ خطأ في المصدر {url}: {e}")
 
-    # ترتيب القنوات
-    priority = ["Jordan TV", "Al Mamlaka", "Roya", "Al Jazeera", "MBC", "Spacetoon"]
+    # تحويل القاموس إلى قائمة
+    final_list = list(channels_map.values())
     
-    def sort_key(ch):
-        for index, p in enumerate(priority):
-            if p.lower() in ch['name'].lower():
-                return index
-        return 999 
+    # تنظيف القنوات التي ليس لها شعار أو التي تبدو وهمية
+    final_list = [ch for ch in final_list if len(ch['urls']) > 0]
 
-    channels.sort(key=sort_key)
-
-    # حفظ الملف
-    with open("channels.json", "w", encoding="utf-8") as f:
-        json.dump(channels, f, ensure_ascii=False, indent=2)
+    # ترتيب الأولويات
+    priority = ["Jordan", "Roya", "Mamlaka", "Jazeera", "MBC", "BeIN", "Abu Dhabi", "Rotana"]
+    def sort_logic(ch):
+        name = ch['name'].lower()
+        for i, p in enumerate(priority):
+            if p.lower() in name:
+                return i
+        return 100
         
-    return channels # هذا هو التعديل المهم
+    final_list.sort(key=sort_logic)
+
+    print(f"✅ تم الانتهاء! دمجنا القنوات في {len(final_list)} قناة فريدة.")
+    
+    with open("channels.json", "w", encoding="utf-8") as f:
+        json.dump(final_list, f, ensure_ascii=False, indent=2)
+        
+    return final_list
 
 if __name__ == "__main__":
-    channels = update() # استقبال النتيجة هنا
-    print(f"تمت العملية! تم جلب {len(channels)} قناة عربية.")
+    update()
