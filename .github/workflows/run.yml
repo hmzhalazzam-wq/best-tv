@@ -1,36 +1,40 @@
-name: Daily Channel Update
+name: Hourly Channel Update
+
 on:
   schedule:
-    - cron: '0 4 * * *' # يعمل الساعة 4 فجراً بتوقيت غرينتش
-  workflow_dispatch: # زر للتشغيل اليدوي
+    # هذا السطر يعني: تشغيل البوت كل ساعة (على رأس الساعة)
+    - cron: '0 * * * *'
+  workflow_dispatch: # يضيف زر في GitHub لتشغيل التحديث يدوياً متى شئت
 
 jobs:
-  update-tv:
+  build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # إذن للكتابة وحفظ الملفات في المستودع
+    
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # مهم لجلب التاريخ كامل
-          
-      - name: Setup Python
+          fetch-depth: 0 # مهم لتجنب مشاكل التاريخ في Git
+
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-          
-      - name: Install Libraries
+
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests
-          
-      - name: Run Update Script
+
+      - name: Run Crawler
         run: python update.py
-        
-      - name: Commit & Push Changes
+
+      - name: Commit and Push
         run: |
           git config --global user.name 'Hamza TV Bot'
           git config --global user.email 'bot@hamza-tv.com'
           git add channels.json
-          # التحقق مما إذا كان هناك تغييرات قبل الحفظ
-          git diff --quiet && git diff --staged --quiet || (git commit -m "📺 تحديث القنوات اليومي" && git pull --rebase && git push)
+          # هذا الأمر الذكي يتحقق: هل تغيرت القنوات؟ إذا نعم، احفظها. إذا لا، لا تفعل شيئاً.
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🚀 تحديث القنوات التلقائي" && git pull --rebase && git push)
