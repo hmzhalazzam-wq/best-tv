@@ -1,24 +1,36 @@
-name: Daily Update
+name: Daily Channel Update
 on:
   schedule:
-    - cron: '0 5 * * *' # يحدث الروابط كل يوم الفجر
-  workflow_dispatch:
+    - cron: '0 4 * * *' # يعمل الساعة 4 فجراً بتوقيت غرينتش
+  workflow_dispatch: # زر للتشغيل اليدوي
 
 jobs:
-  build:
+  update-tv:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
-      - run: pip install requests
-      - run: python update.py
-      - run: |
-          git config --global user.name 'Bot'
-          git config --global user.email 'bot@bot.com'
+          fetch-depth: 0 # مهم لجلب التاريخ كامل
+          
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Install Libraries
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+          
+      - name: Run Update Script
+        run: python update.py
+        
+      - name: Commit & Push Changes
+        run: |
+          git config --global user.name 'Hamza TV Bot'
+          git config --global user.email 'bot@hamza-tv.com'
           git add channels.json
-          git commit -m "Update" || exit 0
-          git push
+          # التحقق مما إذا كان هناك تغييرات قبل الحفظ
+          git diff --quiet && git diff --staged --quiet || (git commit -m "📺 تحديث القنوات اليومي" && git pull --rebase && git push)
