@@ -1,48 +1,129 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCNJRN7GQ6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HCNJRN7GQ6');
-</script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تلفزيون حمزة</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hamza TV Pro</title>
     <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#141414">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCNJRN7GQ6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HCNJRN7GQ6');
+    </script>
+
     <style>
-        body { background: #111; color: white; text-align: center; font-family: sans-serif; margin: 0; padding: 20px; }
-        video { width: 100%; max-width: 800px; border: 2px solid #00ffcc; border-radius: 10px; }
-        .btn-container { margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-        button { padding: 15px; font-size: 16px; background: #333; color: #fff; border: 1px solid #555; border-radius: 5px; cursor: pointer; }
-        button:hover { background: #00ffcc; color: #000; }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { background-color: #141414; color: #fff; font-family: 'Tajawal', sans-serif; margin: 0; padding-bottom: 80px; }
+        
+        /* الرأس والبحث */
+        header { padding: 15px; position: sticky; top: 0; background: rgba(20,20,20,0.95); z-index: 100; backdrop-filter: blur(10px); border-bottom: 1px solid #333; }
+        .search-bar { width: 100%; padding: 12px 20px; border-radius: 30px; border: 1px solid #333; background: #222; color: white; font-family: inherit; font-size: 16px; outline: none; }
+        .search-bar:focus { border-color: #e50914; }
+
+        /* المشغل */
+        #player-area { position: sticky; top: 70px; z-index: 99; background: #000; display: none; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
+        video { width: 100%; aspect-ratio: 16/9; display: block; }
+        .close-btn { position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.7); color: white; border: none; padding: 5px 12px; border-radius: 5px; cursor: pointer; z-index: 101; }
+
+        /* التصنيفات */
+        .categories { display: flex; overflow-x: auto; padding: 15px 10px; gap: 10px; scrollbar-width: none; }
+        .categories::-webkit-scrollbar { display: none; }
+        .cat-btn { background: #333; color: #bbb; border: none; padding: 8px 16px; border-radius: 20px; white-space: nowrap; cursor: pointer; transition: 0.3s; font-size: 14px; }
+        .cat-btn.active { background: #e50914; color: white; font-weight: bold; }
+
+        /* شبكة القنوات */
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 15px; padding: 15px; }
+        .card { background: #1f1f1f; border-radius: 8px; padding: 10px; text-align: center; position: relative; transition: transform 0.2s; cursor: pointer; height: 130px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid #333; }
+        .card:active { transform: scale(0.95); }
+        .card img { width: 50px; height: 50px; object-fit: contain; border-radius: 50%; background: #fff; padding: 2px; margin-bottom: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        .card h3 { font-size: 12px; margin: 0; color: #ddd; line-height: 1.4; }
+        
+        /* أيقونة المفضلة */
+        .fav-icon { position: absolute; top: 5px; right: 5px; font-size: 18px; color: #444; padding: 5px; }
+        .fav-icon.active { color: #e50914; }
+
+        /* رسالة التحميل */
+        .status-msg { text-align: center; margin-top: 50px; color: #666; font-size: 14px; }
     </style>
 </head>
 <body>
-    <h2>🔴 بث مباشر</h2>
-    <video id="video" controls autoplay></video>
-    <div id="list" class="btn-container">جاري تحميل القنوات...</div>
+
+    <header>
+        <input type="text" class="search-bar" id="search" placeholder="🔍 ابحث عن قناة..." onkeyup="filterChannels()">
+    </header>
+
+    <div id="player-area">
+        <button class="close-btn" onclick="closePlayer()">✕ إغلاق</button>
+        <video id="video" controls playsinline></video>
+    </div>
+
+    <div class="categories" id="cats">
+        <button class="cat-btn active" onclick="filterCat('all', this)">الكل</button>
+        <button class="cat-btn" onclick="filterCat('fav', this)">❤️ المفضلة</button>
+        <button class="cat-btn" onclick="filterCat('news', this)">أخبار</button>
+        <button class="cat-btn" onclick="filterCat('sports', this)">رياضة</button>
+        <button class="cat-btn" onclick="filterCat('kids', this)">أطفال</button>
+        <button class="cat-btn" onclick="filterCat('movies', this)">ترفيه</button>
+    </div>
+
+    <div class="grid" id="grid"></div>
+    <div class="status-msg" id="msg">جاري تحميل القنوات...</div>
 
     <script>
-        fetch('channels.json').then(r => r.json()).then(data => {
-            const list = document.getElementById('list');
-            list.innerHTML = "";
-            data.forEach(ch => {
-                let btn = document.createElement('button');
-                btn.innerText = ch.name;
-                btn.onclick = () => play(ch.url);
-                list.appendChild(btn);
-            });
-        }).catch(() => document.getElementById('list').innerText = "يرجى الانتظار قليلاً حتى يعمل الروبوت لأول مرة..");
+        let allData = [];
+        let favorites = JSON.parse(localStorage.getItem('hamza_favs')) || [];
+        const grid = document.getElementById('grid');
+        const msg = document.getElementById('msg');
 
-        function play(url) {
-            var video = document.getElementById('video');
+        // جلب البيانات
+        fetch('channels.json?' + new Date().getTime()) // إضافة الوقت لمنع الكاش
+            .then(r => r.json())
+            .then(data => {
+                allData = data;
+                msg.style.display = 'none';
+                render(allData);
+            })
+            .catch(() => msg.innerHTML = "⚠️ يجب تشغيل الروبوت (Actions) لتحديث القائمة الجديدة");
+
+        function render(list) {
+            grid.innerHTML = "";
+            if(list.length === 0) {
+                grid.innerHTML = "<p style='width:100%; text-align:center; color:#555'>لا توجد قنوات هنا</p>";
+                return;
+            }
+            
+            list.forEach(ch => {
+                let isFav = favorites.includes(ch.name);
+                let logo = ch.logo || "https://cdn-icons-png.flaticon.com/512/2503/2503508.png";
+                
+                let div = document.createElement('div');
+                div.className = 'card';
+                div.innerHTML = `
+                    <div class="fav-icon ${isFav ? 'active' : ''}" onclick="toggleFav('${ch.name}', event)">♥</div>
+                    <img src="${logo}" loading="lazy" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2503/2503508.png'">
+                    <h3>${ch.name}</h3>
+                `;
+                div.onclick = (e) => {
+                    if(!e.target.classList.contains('fav-icon')) playVideo(ch.url);
+                };
+                grid.appendChild(div);
+            });
+        }
+
+        // تشغيل الفيديو
+        function playVideo(url) {
+            let player = document.getElementById('player-area');
+            let video = document.getElementById('video');
+            player.style.display = 'block';
+            
             if (Hls.isSupported()) {
-                var hls = new Hls();
+                let hls = new Hls();
                 hls.loadSource(url);
                 hls.attachMedia(video);
                 hls.on(Hls.Events.MANIFEST_PARSED, function() { video.play(); });
@@ -50,6 +131,57 @@
                 video.src = url;
                 video.play();
             }
+            window.scrollTo(0,0);
+        }
+
+        function closePlayer() {
+            let video = document.getElementById('video');
+            video.pause();
+            video.src = ""; // إيقاف التحميل
+            document.getElementById('player-area').style.display = 'none';
+        }
+
+        // إدارة المفضلة
+        function toggleFav(name, e) {
+            e.stopPropagation();
+            if (favorites.includes(name)) {
+                favorites = favorites.filter(f => f !== name);
+            } else {
+                favorites.push(name);
+            }
+            localStorage.setItem('hamza_favs', JSON.stringify(favorites));
+            
+            // إعادة الرسم حسب الفلتر الحالي
+            let activeCat = document.querySelector('.cat-btn.active').innerText;
+            if(activeCat.includes("المفضلة")) {
+                filterCat('fav', document.querySelector('.cat-btn:nth-child(2)'));
+            } else {
+                // تحديث الأيقونات فقط بدون إعادة تحميل كاملة (لتجربة أسلس)
+                render(currentList); 
+            }
+        }
+
+        // الفلاتر والبحث
+        let currentList = [];
+        
+        function filterCat(cat, btn) {
+            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            if (cat === 'all') {
+                currentList = allData;
+            } else if (cat === 'fav') {
+                currentList = allData.filter(ch => favorites.includes(ch.name));
+            } else {
+                currentList = allData.filter(ch => ch.category === cat);
+            }
+            render(currentList);
+        }
+
+        function filterChannels() {
+            let q = document.getElementById('search').value.toLowerCase();
+            let filtered = allData.filter(ch => ch.name.toLowerCase().includes(q));
+            render(filtered);
         }
     </script>
 </body>
