@@ -1,17 +1,17 @@
 [
   {
     "name": "Jordantv",
-    "logo": "https://i.imgur.com/NjgOBts.png",
+    "logo": "https://cdn-profiles.tunein.com/s142626/images/logod.jpg",
     "category": "general",
     "urls": [
-      "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Tourism/playlist.m3u8",
+      "https://jrtv-live.ercdn.net/jordanhd/jordanhd.m3u8",
       "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/cooking/playlist.m3u8",
       "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Drama/playlist.m3u8",
-      "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Comedy/playlist.m3u8",
+      "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Tourism/playlist.m3u8",
       "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Song/playlist.m3u8",
       "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Archive/playlist.m3u8",
-      "https://jrtv-live.ercdn.net/jordanhd/jordanhd.m3u8",
-      "http://45.63.116.205/hls3/stream1.m3u8"
+      "https://playlist.fasttvcdn.com/pl/cc0blorawy1ibohhrupraa/Comedy/playlist.m3u8",
+      "http://45.63.116.205/hls2/stream1.m3u8"
     ]
   },
   {
@@ -19,11 +19,11 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/7/77/Roya_TV_Logo.png",
     "category": "general",
     "urls": [
-      "https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-comedy/playlist.m3u8",
       "https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-kitchen/playlist.m3u8",
-      "https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids/playlist.m3u8",
+      "https://playlist.fasttvcdn.com/pl/a2le4pbpa6rpzv147haf4w/drama/playlist.m3u8",
+      "https://playlist.fasttvcdn.com/pl/toa2uuhhygheuly7xtuqrg/roya-comedy/playlist.m3u8",
       "https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids-originals/playlist.m3u8",
-      "https://playlist.fasttvcdn.com/pl/a2le4pbpa6rpzv147haf4w/drama/playlist.m3u8"
+      "https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids/playlist.m3u8"
     ]
   },
   {
@@ -36,28 +36,12 @@
   },
   {
     "name": "MBC ",
-    "logo": "https://i.imgur.com/BcXASJp.png",
+    "logo": "https://i.imgur.com/fRWaDyF.png",
     "category": "general",
     "urls": [
-      "https://mbc4-prod-dub-ak.akamaized.net/out/v1/c08681f81775496ab4afa2bac7ae7638/index.m3u8",
       "https://shls-mbc5-prod-dub.shahid.net/out/v1/2720564b6a4641658fdfb6884b160da2/index.m3u8",
-      "https://shls-mbc3-prod-dub.shahid.net/out/v1/d5bbe570e1514d3d9a142657d33d85e6/index.m3u8"
-    ]
-  },
-  {
-    "name": "MBC ACTION",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/MBC_Action_Logo.svg/512px-MBC_Action_Logo.svg.png",
-    "category": "general",
-    "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/561d7d484dc7c8770484914a/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=54&deviceId=561d7d484dc7c8770484914a&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
-    ]
-  },
-  {
-    "name": "MBC BOLLYWOOD",
-    "logo": "https://i.imgur.com/TTAGFHG.png",
-    "category": "general",
-    "urls": [
-      "https://shls-mbcbollywood-prod-dub.shahid.net/out/v1/a79c9d7ef2a64a54a64d5c4567b3462a/index.m3u8"
+      "https://shls-mbc3-prod-dub.shahid.net/out/v1/d5bbe570e1514d3d9a142657d33d85e6/index.m3u8",
+      "https://mbc4-prod-dub-ak.akamaized.net/out/v1/c08681f81775496ab4afa2bac7ae7638/index.m3u8"
     ]
   },
   {
@@ -69,11 +53,27 @@
     ]
   },
   {
-    "name": "Almamlaka",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AlMamlakaTV.svg/512px-AlMamlakaTV.svg.png",
+    "name": "MBC BOLLYWOOD",
+    "logo": "https://i.imgur.com/TTAGFHG.png",
     "category": "general",
     "urls": [
-      "https://bcovlive-a.akamaihd.net/4109c7ba30fd4a44ad9afe917c67a8c8/eu-central-1/6415809151001/playlist_dvr.m3u8"
+      "https://shls-mbcbollywood-prod-dub.shahid.net/out/v1/a79c9d7ef2a64a54a64d5c4567b3462a/index.m3u8"
+    ]
+  },
+  {
+    "name": "MBC ACTION",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/MBC_Action_Logo.svg/512px-MBC_Action_Logo.svg.png",
+    "category": "general",
+    "urls": [
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/561d7d484dc7c8770484914a/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=54&deviceId=561d7d484dc7c8770484914a&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+    ]
+  },
+  {
+    "name": "Alabiyaalhadath1080Pnot24",
+    "logo": "https://i.imgur.com/De4SEWE.png",
+    "category": "general",
+    "urls": [
+      "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"
     ]
   },
   {
@@ -93,30 +93,6 @@
     ]
   },
   {
-    "name": "Alsunnahalnabawiyah360P",
-    "logo": "https://i.imgur.com/S6LcTJv.png",
-    "category": "general",
-    "urls": [
-      "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8"
-    ]
-  },
-  {
-    "name": "Alabiyaalhadath1080Pnot24",
-    "logo": "https://i.imgur.com/De4SEWE.png",
-    "category": "general",
-    "urls": [
-      "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Quranradio1080P",
-    "logo": "https://i.imgur.com/ut0kr4x.png",
-    "category": "religious",
-    "urls": [
-      "https://live.kwikmotion.com/sbrksaquranradiolive/srpksaquranradio/playlist.m3u8"
-    ]
-  },
-  {
     "name": "Rotanaaflam",
     "logo": "https://i.imgur.com/DLDfFpu.png",
     "category": "general",
@@ -125,59 +101,27 @@
     ]
   },
   {
-    "name": "Ashqs1080P",
-    "logo": "https://i.imgur.com/bqRC3sl.png",
+    "name": "Alsunnahalnabawiyah360P",
+    "logo": "https://i.imgur.com/S6LcTJv.png",
     "category": "general",
     "urls": [
-      "https://live-news.asharq.com/asharq.m3u8"
+      "https://cdn-globecast.akamaized.net/live/eds/saudi_sunnah/hls_roku/index.m3u8"
     ]
   },
   {
-    "name": "Alabiyaenglish1080P",
-    "logo": "https://shahid.mbc.net/mediaObject/7cfc0baf-1201-477f-b722-d3099fafe17f?height=230&width=512&croppingPoint=&version=1&type=png",
+    "name": "Almamlaka",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/AlMamlakaTV.svg/512px-AlMamlakaTV.svg.png",
     "category": "general",
     "urls": [
-      "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"
+      "https://bcovlive-a.akamaihd.net/4109c7ba30fd4a44ad9afe917c67a8c8/eu-central-1/6415809151001/playlist_dvr.m3u8"
     ]
   },
   {
-    "name": "Nidaealislamradio1080P",
-    "logo": "https://i.imgur.com/laEk64E.png",
+    "name": "Ashqradio1080P",
+    "logo": "https://i.imgur.com/M6K8cD3.jpeg",
     "category": "general",
     "urls": [
-      "https://live.kwikmotion.com/sbrksanedaradiolive/srpksanedaradio/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Iqraaquran1080P",
-    "logo": "https://i.imgur.com/HPVsIa4.png",
-    "category": "religious",
-    "urls": [
-      "https://playlist.fasttvcdn.com/pl/dlkqw1ftuvuuzkcb4pxdcg/Iqraafasttv2/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Saudiaradio1080P",
-    "logo": "https://i.imgur.com/CvrR7wW.png",
-    "category": "general",
-    "urls": [
-      "https://live.kwikmotion.com/sbrksasaudiaradiolive/srpksasaudiaradio/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Ashqdocumenty1080P",
-    "logo": "https://i.imgur.com/v6VsFEt.png",
-    "category": "general",
-    "urls": [
-      "https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8"
-    ]
-  },
-  {
-    "name": "Iqraaabic1080Pnot24",
-    "logo": "https://i.imgur.com/HPVsIa4.png",
-    "category": "general",
-    "urls": [
-      "https://playlist.fasttvcdn.com/pl/dlkqw1ftuvuuzkcb4pxdcg/Iqraafasttv3/playlist.m3u8"
+      "https://svs.itworkscdn.net/asharqradiovlive/asharqradiov/playlist.m3u8"
     ]
   },
   {
@@ -197,59 +141,11 @@
     ]
   },
   {
-    "name": "Alriyadhradio1080P",
-    "logo": "https://i.imgur.com/8PH1Lak.png",
+    "name": "Alabiyaenglish1080P",
+    "logo": "https://shahid.mbc.net/mediaObject/7cfc0baf-1201-477f-b722-d3099fafe17f?height=230&width=512&croppingPoint=&version=1&type=png",
     "category": "general",
     "urls": [
-      "https://live.kwikmotion.com/sbrksariyadhradiolive/srpksariyadhradio/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Ashqradio1080P",
-    "logo": "https://i.imgur.com/M6K8cD3.jpeg",
-    "category": "general",
-    "urls": [
-      "https://svs.itworkscdn.net/asharqradiovlive/asharqradiov/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Alaqsa416Pnot24",
-    "logo": "https://i.imgur.com/Z2rfrQ8.png",
-    "category": "general",
-    "urls": [
-      "http://167.172.161.13/hls/feedspare/6udfi7v8a3eof6nlps6e9ovfrs65c7l7.m3u8"
-    ]
-  },
-  {
-    "name": "Alabiya",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Al-Arabiya_new_logo.svg/640px-Al-Arabiya_new_logo.svg.png",
-    "category": "general",
-    "urls": [
-      "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Alabiyaprograms1280P",
-    "logo": "https://i.imgur.com/Hoc3cfO.png",
-    "category": "general",
-    "urls": [
-      "https://live.alarabiya.net/alarabiapublish/aaprograms.smil/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Alaby21080P",
-    "logo": "https://i.imgur.com/Gp5mNea.png",
-    "category": "general",
-    "urls": [
-      "https://live.kwikmotion.com/alaraby2live/alaraby2.smil/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Alabiyabusiness",
-    "logo": "https://i.imgur.com/eEV4r6J.jpg",
-    "category": "general",
-    "urls": [
-      "https://live.alarabiya.net/alarabiapublish/aswaaq.smil/playlist.m3u8"
+      "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"
     ]
   },
   {
@@ -261,6 +157,150 @@
     ]
   },
   {
+    "name": "Iqraaquran1080P",
+    "logo": "https://i.imgur.com/HPVsIa4.png",
+    "category": "religious",
+    "urls": [
+      "https://playlist.fasttvcdn.com/pl/dlkqw1ftuvuuzkcb4pxdcg/Iqraafasttv2/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Iqraaabic1080Pnot24",
+    "logo": "https://i.imgur.com/HPVsIa4.png",
+    "category": "general",
+    "urls": [
+      "https://playlist.fasttvcdn.com/pl/dlkqw1ftuvuuzkcb4pxdcg/Iqraafasttv3/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Alabiya",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Al-Arabiya_new_logo.svg/640px-Al-Arabiya_new_logo.svg.png",
+    "category": "general",
+    "urls": [
+      "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Alaqsa416Pnot24",
+    "logo": "https://i.imgur.com/Z2rfrQ8.png",
+    "category": "general",
+    "urls": [
+      "http://167.172.161.13/hls/feedspare/6udfi7v8a3eof6nlps6e9ovfrs65c7l7.m3u8"
+    ]
+  },
+  {
+    "name": "Abudhabisports11080P",
+    "logo": "https://i.imgur.com/6BVWk8z.png",
+    "category": "sports",
+    "urls": [
+      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_1/abudhabi_sports_1_hls_nd/index.m3u8"
+    ]
+  },
+  {
+    "name": "Majid1080P",
+    "logo": "https://i.imgur.com/TzOKMMy.png",
+    "category": "general",
+    "urls": [
+      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/majid/majid_hls_nd/index.m3u8"
+    ]
+  },
+  {
+    "name": "Yas1080P",
+    "logo": "https://i.imgur.com/CSHQhP4.png",
+    "category": "general",
+    "urls": [
+      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/yas_1/yas_1_hls_nd/index.m3u8"
+    ]
+  },
+  {
+    "name": "Alaby21080P",
+    "logo": "https://i.imgur.com/Gp5mNea.png",
+    "category": "general",
+    "urls": [
+      "https://live.kwikmotion.com/alaraby2live/alaraby2.smil/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Baynounah1080P",
+    "logo": "https://i.imgur.com/uVmHT97.png",
+    "category": "general",
+    "urls": [
+      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/baynounah/baynounah_hls_nd/index.m3u8"
+    ]
+  },
+  {
+    "name": "Alabiyabusiness",
+    "logo": "https://i.imgur.com/eEV4r6J.jpg",
+    "category": "general",
+    "urls": [
+      "https://live.alarabiya.net/alarabiapublish/aswaaq.smil/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Abudhabiemirates1080P",
+    "logo": "https://i.imgur.com/iSbZqn4.png",
+    "category": "general",
+    "urls": [
+      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/emarat_tv/emarat_tv_hls_nd/index.m3u8"
+    ]
+  },
+  {
+    "name": "Alabiyaprograms1280P",
+    "logo": "https://i.imgur.com/Hoc3cfO.png",
+    "category": "general",
+    "urls": [
+      "https://live.alarabiya.net/alarabiapublish/aaprograms.smil/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Nidaealislamradio1080P",
+    "logo": "https://i.imgur.com/laEk64E.png",
+    "category": "general",
+    "urls": [
+      "https://live.kwikmotion.com/sbrksanedaradiolive/srpksanedaradio/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Abudhabi1080P",
+    "logo": "https://i.imgur.com/8DAriPs.png",
+    "category": "general",
+    "urls": [
+      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_tv/abudhabi_tv_hls_nd/index.m3u8"
+    ]
+  },
+  {
+    "name": "Alaby1080P",
+    "logo": "https://i.imgur.com/YMqWEe4.png",
+    "category": "general",
+    "urls": [
+      "https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Quranradio1080P",
+    "logo": "https://i.imgur.com/ut0kr4x.png",
+    "category": "religious",
+    "urls": [
+      "https://live.kwikmotion.com/sbrksaquranradiolive/srpksaquranradio/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Ashqdocumenty1080P",
+    "logo": "https://i.imgur.com/v6VsFEt.png",
+    "category": "general",
+    "urls": [
+      "https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8"
+    ]
+  },
+  {
+    "name": "Alkmatalmazadiscipleship1080Pnot24",
+    "logo": "https://i.imgur.com/t2ZkRbr.png",
+    "category": "general",
+    "urls": [
+      "https://58cc65c534c67.streamlock.net/alkarmatv.com/alkarmame2.smil/playlist.m3u8"
+    ]
+  },
+  {
     "name": "Nour",
     "logo": "https://upload.wikimedia.org/wikipedia/en/8/8c/Nourtv_logo.jpg",
     "category": "general",
@@ -269,11 +309,67 @@
     ]
   },
   {
+    "name": "Abudhabisports21080P",
+    "logo": "https://i.imgur.com/y1I2jFK.png",
+    "category": "sports",
+    "urls": [
+      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_2/abudhabi_sports_2_hls_nd/index.m3u8"
+    ]
+  },
+  {
+    "name": "Saudiaradio1080P",
+    "logo": "https://i.imgur.com/CvrR7wW.png",
+    "category": "general",
+    "urls": [
+      "https://live.kwikmotion.com/sbrksasaudiaradiolive/srpksasaudiaradio/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Alriyadhradio1080P",
+    "logo": "https://i.imgur.com/8PH1Lak.png",
+    "category": "general",
+    "urls": [
+      "https://live.kwikmotion.com/sbrksariyadhradiolive/srpksariyadhradio/playlist.m3u8"
+    ]
+  },
+  {
     "name": "Alkmapraise720Pnot24",
     "logo": "https://i.imgur.com/bJLKkou.png",
     "category": "general",
     "urls": [
       "https://58cc65c534c67.streamlock.net/alkarmatv.com/alkarmapa.smil/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Alkmaaustralia1080Pnot24",
+    "logo": "https://i.imgur.com/90ykspa.png",
+    "category": "general",
+    "urls": [
+      "https://58cc65c534c67.streamlock.net/alkarmatv.com/alkarmaau.smil/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Watradio1080P",
+    "logo": "https://sbauae.faulio.com/storage/mediagallery/d2/ad/fullhd_48adf2291d08266c05ed1b0c24f326c86b1095b7.png",
+    "category": "general",
+    "urls": [
+      "https://svs.itworkscdn.net/smcwatarlive/smcwatar/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Aljazeeramubasher241080P",
+    "logo": "https://i.imgur.com/LMCcIZ2.png",
+    "category": "news",
+    "urls": [
+      "https://live-hls-apps-ajm24-fa.getaj.net/AJM24/index.m3u8"
+    ]
+  },
+  {
+    "name": "Huda",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_huda_%D8%AD%D8%AC%D9%85_%D9%83%D8%A8%D9%8A%D8%B1.gif",
+    "category": "general",
+    "urls": [
+      "https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8"
     ]
   },
   {
@@ -293,27 +389,11 @@
     ]
   },
   {
-    "name": "Alkmaaustralia1080Pnot24",
-    "logo": "https://i.imgur.com/90ykspa.png",
-    "category": "general",
+    "name": "Aljazeeramubasher1080P",
+    "logo": "https://i.imgur.com/X80DQvF.png",
+    "category": "news",
     "urls": [
-      "https://58cc65c534c67.streamlock.net/alkarmatv.com/alkarmaau.smil/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Alaby1080P",
-    "logo": "https://i.imgur.com/YMqWEe4.png",
-    "category": "general",
-    "urls": [
-      "https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Alkmatalmazadiscipleship1080Pnot24",
-    "logo": "https://i.imgur.com/t2ZkRbr.png",
-    "category": "general",
-    "urls": [
-      "https://58cc65c534c67.streamlock.net/alkarmatv.com/alkarmame2.smil/playlist.m3u8"
+      "https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8"
     ]
   },
   {
@@ -333,11 +413,11 @@
     ]
   },
   {
-    "name": "Alkassfour1080P",
-    "logo": "https://i.imgur.com/iDL65Wu.png",
+    "name": "Alkassseven1080P",
+    "logo": "https://i.imgur.com/3eyHP3S.png",
     "category": "general",
     "urls": [
-      "https://liveeu-gcp.alkassdigital.net/alkass4-p/main.m3u8"
+      "https://liveeu-gcp.alkassdigital.net/alkass7-p/main.m3u8"
     ]
   },
   {
@@ -349,78 +429,6 @@
     ]
   },
   {
-    "name": "Almas576P",
-    "logo": "https://play-lh.googleusercontent.com/FHPrsr391mPFqKfTq6ZdvWPZNVfsZeTAVQ8rjQF-NosnRdNipUy5xa43RWkiF4tGcQU",
-    "category": "general",
-    "urls": [
-      "https://starmenajo.com/hls/almasar/index.m3u8"
-    ]
-  },
-  {
-    "name": "Alkassone1080P",
-    "logo": "https://i.imgur.com/10mmlha.png",
-    "category": "general",
-    "urls": [
-      "https://liveeu-gcp.alkassdigital.net/alkass1-p/main.m3u8"
-    ]
-  },
-  {
-    "name": "Huda",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/58/Logo_huda_%D8%AD%D8%AC%D9%85_%D9%83%D8%A8%D9%8A%D8%B1.gif",
-    "category": "general",
-    "urls": [
-      "https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8"
-    ]
-  },
-  {
-    "name": "Alkassseven1080P",
-    "logo": "https://i.imgur.com/3eyHP3S.png",
-    "category": "general",
-    "urls": [
-      "https://liveeu-gcp.alkassdigital.net/alkass7-p/main.m3u8"
-    ]
-  },
-  {
-    "name": "Aljazeeramubasher241080P",
-    "logo": "https://i.imgur.com/LMCcIZ2.png",
-    "category": "news",
-    "urls": [
-      "https://live-hls-apps-ajm24-fa.getaj.net/AJM24/index.m3u8"
-    ]
-  },
-  {
-    "name": "Alqam1080P",
-    "logo": "https://i.imgur.com/zkBT0C8.png",
-    "category": "general",
-    "urls": [
-      "https://streamer3.premio.link/alqamar/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Cnbcabiya1080P",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/5/54/CNBC_Arabia_-_New_Logo.png",
-    "category": "general",
-    "urls": [
-      "https://cnbc-live.akamaized.net/cnbc/master.m3u8"
-    ]
-  },
-  {
-    "name": "Alkmayouthenglish1080Pnot24",
-    "logo": "https://i.imgur.com/kpuO8m7.png",
-    "category": "general",
-    "urls": [
-      "https://5aafcc5de91f1.streamlock.net/alkarmatv.com/alkarmaus.smil/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Watradio1080P",
-    "logo": "https://sbauae.faulio.com/storage/mediagallery/d2/ad/fullhd_48adf2291d08266c05ed1b0c24f326c86b1095b7.png",
-    "category": "general",
-    "urls": [
-      "https://svs.itworkscdn.net/smcwatarlive/smcwatar/playlist.m3u8"
-    ]
-  },
-  {
     "name": "Holyquranradionablus720P",
     "logo": "https://quran-radio.com/assets/images/site/quran-radio-logo-h-rtl.png",
     "category": "religious",
@@ -429,19 +437,11 @@
     ]
   },
   {
-    "name": "Alkasstwo1080P",
-    "logo": "https://i.imgur.com/8w61kFX.png",
+    "name": "Alkassfive1080P",
+    "logo": "https://i.imgur.com/6RGNGsM.png",
     "category": "general",
     "urls": [
-      "https://liveeu-gcp.alkassdigital.net/alkass2-p/main.m3u8"
-    ]
-  },
-  {
-    "name": "Aljazeeramubasher1080P",
-    "logo": "https://i.imgur.com/X80DQvF.png",
-    "category": "news",
-    "urls": [
-      "https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8"
+      "https://liveeu-gcp.alkassdigital.net/alkass5-p/main.m3u8"
     ]
   },
   {
@@ -450,54 +450,6 @@
     "category": "general",
     "urls": [
       "https://arabic-livews.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Alquran1080P",
-    "logo": "https://i.imgur.com/lqVwrAF.png",
-    "category": "religious",
-    "urls": [
-      "https://ktvlive.online/stream/hls/ch1.m3u8"
-    ]
-  },
-  {
-    "name": "Alkmanorthamericacanada1080Pnot24",
-    "logo": "https://i.imgur.com/pnm60bq.png",
-    "category": "general",
-    "urls": [
-      "https://5aafcc5de91f1.streamlock.net/alkarmatv.com/alkarmana1.smil/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Alshqiyas",
-    "logo": "https://i.imgur.com/P6p17ZY.jpg",
-    "category": "general",
-    "urls": [
-      "https://5d94523502c2d.streamlock.net/alsharqiyalive/mystream/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Dwabic1080P",
-    "logo": "https://i.imgur.com/8MRNFb9.png",
-    "category": "general",
-    "urls": [
-      "https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/master.m3u8"
-    ]
-  },
-  {
-    "name": "Alkasssix1080P",
-    "logo": "https://i.imgur.com/CrPSPSC.png",
-    "category": "general",
-    "urls": [
-      "https://liveeu-gcp.alkassdigital.net/alkass6-p/main.m3u8"
-    ]
-  },
-  {
-    "name": "France24Abic1080P",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/France_24_logo_%282013%29.svg/512px-France_24_logo_%282013%29.svg.png",
-    "category": "general",
-    "urls": [
-      "https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8"
     ]
   },
   {
@@ -517,91 +469,83 @@
     ]
   },
   {
-    "name": "Almahriah576P",
-    "logo": "https://i.imgur.com/GgEeTNr.png",
+    "name": "Cnbcabiya1080P",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/5/54/CNBC_Arabia_-_New_Logo.png",
     "category": "general",
     "urls": [
-      "https://starmenajo.com/hls/almahriah/index.m3u8"
+      "https://cnbc-live.akamaized.net/cnbc/master.m3u8"
     ]
   },
   {
-    "name": "Abudhabi1080P",
-    "logo": "https://i.imgur.com/8DAriPs.png",
+    "name": "Alkassfour1080P",
+    "logo": "https://i.imgur.com/iDL65Wu.png",
     "category": "general",
     "urls": [
-      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_tv/abudhabi_tv_hls_nd/index.m3u8"
+      "https://liveeu-gcp.alkassdigital.net/alkass4-p/main.m3u8"
     ]
   },
   {
-    "name": "Yas1080P",
-    "logo": "https://i.imgur.com/CSHQhP4.png",
+    "name": "Alqam1080P",
+    "logo": "https://i.imgur.com/zkBT0C8.png",
     "category": "general",
     "urls": [
-      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/yas_1/yas_1_hls_nd/index.m3u8"
+      "https://streamer3.premio.link/alqamar/playlist.m3u8"
     ]
   },
   {
-    "name": "Alkassthree1080P",
-    "logo": "https://i.imgur.com/d57BdFh.png",
+    "name": "France24Abic1080P",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/France_24_logo_%282013%29.svg/512px-France_24_logo_%282013%29.svg.png",
     "category": "general",
     "urls": [
-      "https://liveeu-gcp.alkassdigital.net/alkass3-p/main.m3u8"
+      "https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8"
     ]
   },
   {
-    "name": "Baynounah1080P",
-    "logo": "https://i.imgur.com/uVmHT97.png",
+    "name": "Alquran1080P",
+    "logo": "https://i.imgur.com/lqVwrAF.png",
+    "category": "religious",
+    "urls": [
+      "https://ktvlive.online/stream/hls/ch1.m3u8"
+    ]
+  },
+  {
+    "name": "Dwabic1080P",
+    "logo": "https://i.imgur.com/8MRNFb9.png",
     "category": "general",
     "urls": [
-      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/baynounah/baynounah_hls_nd/index.m3u8"
+      "https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/master.m3u8"
     ]
   },
   {
-    "name": "Abudhabisports21080P",
-    "logo": "https://i.imgur.com/y1I2jFK.png",
-    "category": "sports",
-    "urls": [
-      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_2/abudhabi_sports_2_hls_nd/index.m3u8"
-    ]
-  },
-  {
-    "name": "Abudhabiemirates1080P",
-    "logo": "https://i.imgur.com/iSbZqn4.png",
+    "name": "Alkassone1080P",
+    "logo": "https://i.imgur.com/10mmlha.png",
     "category": "general",
     "urls": [
-      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/emarat_tv/emarat_tv_hls_nd/index.m3u8"
+      "https://liveeu-gcp.alkassdigital.net/alkass1-p/main.m3u8"
     ]
   },
   {
-    "name": "Alkassfive1080P",
-    "logo": "https://i.imgur.com/6RGNGsM.png",
+    "name": "Alkmanorthamericacanada1080Pnot24",
+    "logo": "https://i.imgur.com/pnm60bq.png",
     "category": "general",
     "urls": [
-      "https://liveeu-gcp.alkassdigital.net/alkass5-p/main.m3u8"
+      "https://5aafcc5de91f1.streamlock.net/alkarmatv.com/alkarmana1.smil/playlist.m3u8"
     ]
   },
   {
-    "name": "Godstandsabic",
-    "logo": "https://i.imgur.com/EO6cYUI.png",
+    "name": "Alkasssix1080P",
+    "logo": "https://i.imgur.com/CrPSPSC.png",
     "category": "general",
     "urls": [
-      "https://online.godstands.tv:5443/WebRTCApp/streams/Arabic.m3u8"
+      "https://liveeu-gcp.alkassdigital.net/alkass6-p/main.m3u8"
     ]
   },
   {
-    "name": "Abudhabisports11080P",
-    "logo": "https://i.imgur.com/6BVWk8z.png",
-    "category": "sports",
-    "urls": [
-      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/abudhabi_sports_1/abudhabi_sports_1_hls_nd/index.m3u8"
-    ]
-  },
-  {
-    "name": "Alkassshoof21080P",
-    "logo": "https://shoof.alkass.net/assets/images/shoof2.png",
+    "name": "Alkmayouthenglish1080Pnot24",
+    "logo": "https://i.imgur.com/kpuO8m7.png",
     "category": "general",
     "urls": [
-      "https://liveeu-gcp.alkassdigital.net/shooflive2/main.m3u8"
+      "https://5aafcc5de91f1.streamlock.net/alkarmatv.com/alkarmaus.smil/playlist.m3u8"
     ]
   },
   {
@@ -613,11 +557,43 @@
     ]
   },
   {
-    "name": "Majid1080P",
-    "logo": "https://i.imgur.com/TzOKMMy.png",
+    "name": "Alkassthree1080P",
+    "logo": "https://i.imgur.com/d57BdFh.png",
     "category": "general",
     "urls": [
-      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/majid/majid_hls_nd/index.m3u8"
+      "https://liveeu-gcp.alkassdigital.net/alkass3-p/main.m3u8"
+    ]
+  },
+  {
+    "name": "Alshqiyas",
+    "logo": "https://i.imgur.com/P6p17ZY.jpg",
+    "category": "general",
+    "urls": [
+      "https://5d94523502c2d.streamlock.net/alsharqiyalive/mystream/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Alkassshoof21080P",
+    "logo": "https://shoof.alkass.net/assets/images/shoof2.png",
+    "category": "general",
+    "urls": [
+      "https://liveeu-gcp.alkassdigital.net/shooflive2/main.m3u8"
+    ]
+  },
+  {
+    "name": "Alkasstwo1080P",
+    "logo": "https://i.imgur.com/8w61kFX.png",
+    "category": "general",
+    "urls": [
+      "https://liveeu-gcp.alkassdigital.net/alkass2-p/main.m3u8"
+    ]
+  },
+  {
+    "name": "Godstandsabic",
+    "logo": "https://i.imgur.com/EO6cYUI.png",
+    "category": "general",
+    "urls": [
+      "https://online.godstands.tv:5443/WebRTCApp/streams/Arabic.m3u8"
     ]
   },
   {
@@ -629,75 +605,11 @@
     ]
   },
   {
-    "name": "Bahrainquran720Pnot24",
-    "logo": "https://i.imgur.com/er5hOK4.png",
-    "category": "religious",
-    "urls": [
-      "https://5c7b683162943.streamlock.net/live/ngrp:bahrainquran_all/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Mta3Alabia1080P",
-    "logo": "https://i.imgur.com/m3PEldJ.png",
-    "category": "general",
-    "urls": [
-      "https://chlivemta1.akamaized.net/hls/live/2010556/mta3alarabia/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Omanmubashir1080P",
-    "logo": "https://i.imgur.com/UkQTR5b.png",
-    "category": "general",
-    "urls": [
-      "https://partwota.cdn.mgmlcdn.com/omlive/smil:omlive.stream.smil/chunklist.m3u8"
-    ]
-  },
-  {
-    "name": "Almaef1080P",
-    "logo": "https://i.imgur.com/QFnztgo.png",
-    "category": "general",
-    "urls": [
-      "https://bucharest.zeuscdn724.com/lb0/CH-AL-MA/index.m3u8"
-    ]
-  },
-  {
-    "name": "Oman1080P",
-    "logo": "https://i.imgur.com/rBftT9x.png",
-    "category": "general",
-    "urls": [
-      "https://partneta.cdn.mgmlcdn.com/omantv/smil:omantv.stream.smil/chunklist.m3u8"
-    ]
-  },
-  {
-    "name": "Omansports1080Pnot24",
-    "logo": "https://i.imgur.com/1omi7p8.png",
-    "category": "sports",
-    "urls": [
-      "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8"
-    ]
-  },
-  {
     "name": "Medi1Abic720P",
     "logo": "https://i.imgur.com/3YsZPY6.jpeg",
     "category": "general",
     "urls": [
       "https://streaming2.medi1tv.com/live/smil:medi1ar.smil/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Zin",
-    "logo": "https://www.lyngsat.com/logo/tv/zz/zarin_tv.png",
-    "category": "general",
-    "urls": [
-      "https://fl1002.bozztv.com/gf-zarintv/index.m3u8"
-    ]
-  },
-  {
-    "name": "Azst",
-    "logo": "https://i.imgur.com/di3XX5L.png",
-    "category": "general",
-    "urls": [
-      "http://live.azstartv.com/azstar/smil:azstar.smil/playlist.m3u8"
     ]
   },
   {
@@ -709,19 +621,19 @@
     ]
   },
   {
-    "name": "Mina1080P",
-    "logo": "https://i.imgur.com/F2PzEaw.png",
+    "name": "Omanmubashir1080P",
+    "logo": "https://i.imgur.com/UkQTR5b.png",
     "category": "general",
     "urls": [
-      "https://ffs.gulfsat.com/Marina-TV-HD/index.m3u8"
+      "https://partwota.cdn.mgmlcdn.com/omlive/smil:omlive.stream.smil/chunklist.m3u8"
     ]
   },
   {
-    "name": "Nationalgeographicabudhabi1080P",
-    "logo": "https://i.imgur.com/fNA00VF.png",
-    "category": "general",
+    "name": "Omansports1080Pnot24",
+    "logo": "https://i.imgur.com/1omi7p8.png",
+    "category": "sports",
     "urls": [
-      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/national_geo/national_geo_hls_nd/index.m3u8"
+      "https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist.m3u8"
     ]
   },
   {
@@ -733,6 +645,14 @@
     ]
   },
   {
+    "name": "Mina1080P",
+    "logo": "https://i.imgur.com/F2PzEaw.png",
+    "category": "general",
+    "urls": [
+      "https://ffs.gulfsat.com/Marina-TV-HD/index.m3u8"
+    ]
+  },
+  {
     "name": "Omanalthakafia1080P",
     "logo": "https://i.imgur.com/b38wNPK.png",
     "category": "general",
@@ -741,27 +661,27 @@
     ]
   },
   {
-    "name": "Sat7Abic240P",
-    "logo": "https://i.imgur.com/BzDjQeQ.png",
+    "name": "Oman1080P",
+    "logo": "https://i.imgur.com/rBftT9x.png",
     "category": "general",
     "urls": [
-      "https://svs.itworkscdn.net/sat7arabiclive/sat7arabic.smil/playlist_dvr.m3u8"
+      "https://partneta.cdn.mgmlcdn.com/omantv/smil:omantv.stream.smil/chunklist.m3u8"
     ]
   },
   {
-    "name": "Skysabia1080Pnot24",
-    "logo": "https://i.imgur.com/SvjU4h6.png",
+    "name": "Zin",
+    "logo": "https://www.lyngsat.com/logo/tv/zz/zarin_tv.png",
     "category": "general",
     "urls": [
-      "https://stream.skynewsarabia.com/ott/ott.m3u8"
+      "https://fl1002.bozztv.com/gf-zarintv/index.m3u8"
     ]
   },
   {
-    "name": "Skysabiaportrait1280Pnot24",
-    "logo": "https://i.imgur.com/FjtzQQs.png",
+    "name": "Almaef1080P",
+    "logo": "https://i.imgur.com/QFnztgo.png",
     "category": "general",
     "urls": [
-      "https://stream.skynewsarabia.com/vertical/vertical.m3u8"
+      "https://bucharest.zeuscdn724.com/lb0/CH-AL-MA/index.m3u8"
     ]
   },
   {
@@ -773,6 +693,30 @@
     ]
   },
   {
+    "name": "Skysabia1080Pnot24",
+    "logo": "https://i.imgur.com/SvjU4h6.png",
+    "category": "general",
+    "urls": [
+      "https://stream.skynewsarabia.com/ott/ott.m3u8"
+    ]
+  },
+  {
+    "name": "Nationalgeographicabudhabi1080P",
+    "logo": "https://i.imgur.com/fNA00VF.png",
+    "category": "general",
+    "urls": [
+      "https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv_enc/national_geo/national_geo_hls_nd/index.m3u8"
+    ]
+  },
+  {
+    "name": "Azst",
+    "logo": "https://i.imgur.com/di3XX5L.png",
+    "category": "general",
+    "urls": [
+      "http://live.azstartv.com/azstar/smil:azstar.smil/playlist.m3u8"
+    ]
+  },
+  {
     "name": "Skysabiavertical1080P",
     "logo": "https://i.imgur.com/FjtzQQs.png",
     "category": "general",
@@ -781,11 +725,19 @@
     ]
   },
   {
-    "name": "Trtabi",
-    "logo": "https://i.imgur.com/yyhWOZs.png",
+    "name": "Skysabiaportrait1280Pnot24",
+    "logo": "https://i.imgur.com/FjtzQQs.png",
     "category": "general",
     "urls": [
-      "https://tv-trtarabi.medya.trt.com.tr/master.m3u8"
+      "https://stream.skynewsarabia.com/vertical/vertical.m3u8"
+    ]
+  },
+  {
+    "name": "Sat7Abic240P",
+    "logo": "https://i.imgur.com/BzDjQeQ.png",
+    "category": "general",
+    "urls": [
+      "https://svs.itworkscdn.net/sat7arabiclive/sat7arabic.smil/playlist_dvr.m3u8"
     ]
   },
   {
@@ -797,11 +749,19 @@
     ]
   },
   {
-    "name": "Yemenshabab1080P",
-    "logo": "https://i.imgur.com/H5Oi2NS.png",
+    "name": "Qaf1080P",
+    "logo": "https://i.imgur.com/hrk7Uce.png",
     "category": "general",
     "urls": [
-      "https://starmenajo.com/hls/yemenshabab/index.m3u8"
+      "https://customer-9vqui33qma2rownb.cloudflarestream.com/7792e558fe54e23bdd4b462ec275cdba/manifest/video.m3u8"
+    ]
+  },
+  {
+    "name": "Trtabi",
+    "logo": "https://i.imgur.com/yyhWOZs.png",
+    "category": "general",
+    "urls": [
+      "https://tv-trtarabi.medya.trt.com.tr/master.m3u8"
     ]
   },
   {
@@ -813,6 +773,14 @@
     ]
   },
   {
+    "name": "Mta3Alabia1080P",
+    "logo": "https://i.imgur.com/m3PEldJ.png",
+    "category": "general",
+    "urls": [
+      "https://chlivemta1.akamaized.net/hls/live/2010556/mta3alarabia/playlist.m3u8"
+    ]
+  },
+  {
     "name": "Tanasuh1080P",
     "logo": "https://i.imgur.com/iBAhM2v.png",
     "category": "general",
@@ -821,11 +789,11 @@
     ]
   },
   {
-    "name": "Qaf1080P",
-    "logo": "https://i.imgur.com/hrk7Uce.png",
-    "category": "general",
+    "name": "Bahrainquran720Pnot24",
+    "logo": "https://i.imgur.com/er5hOK4.png",
+    "category": "religious",
     "urls": [
-      "https://customer-9vqui33qma2rownb.cloudflarestream.com/7792e558fe54e23bdd4b462ec275cdba/manifest/video.m3u8"
+      "https://5c7b683162943.streamlock.net/live/ngrp:bahrainquran_all/playlist.m3u8"
     ]
   },
   {
@@ -837,27 +805,19 @@
     ]
   },
   {
-    "name": "Televizijarepublikesrpskertrs",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/RTRS_Logo.svg/640px-RTRS_Logo.svg.png",
+    "name": "Stfinland",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/640px-Star_Channel_2020.svg.png",
     "category": "general",
     "urls": [
-      "https://parh.rtrs.tv/tv/live/playlist.m3u8"
+      "https://live-fi.tvkaista.net/star-channel/live.m3u8?src=freetv"
     ]
   },
   {
-    "name": "Stcentralgreece",
-    "logo": "https://i.imgur.com/BTUEvxg.png",
-    "category": "general",
+    "name": "Osn",
+    "logo": "https://i.imgur.com/72oMSWz.png",
+    "category": "movies",
     "urls": [
-      "https://telmaco-cdn.akamaized.net/starcgr/default/dash/LAMIAStar-video=3000000.dash"
-    ]
-  },
-  {
-    "name": "St",
-    "logo": "https://i.imgur.com/Hp0stVQ.png",
-    "category": "general",
-    "urls": [
-      "https://livestar.siliconweb.com/starvod/star4/star4.m3u8"
+      "https://best-str.umn.cdn.united.cloud/stream?channel=n1bos&p=n1Sh4redSecre7iNf0&sp=n1info&stream=sp1400&u=n1info"
     ]
   },
   {
@@ -869,19 +829,19 @@
     ]
   },
   {
-    "name": "Stfinland",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/640px-Star_Channel_2020.svg.png",
+    "name": "Stinternational",
+    "logo": "https://i.imgur.com/Hp0stVQ.png",
     "category": "general",
     "urls": [
-      "https://live-fi.tvkaista.net/star-channel/live.m3u8?src=freetv"
+      "https://livestar.siliconweb.com/starvod/star_int/star_int.m3u8"
     ]
   },
   {
-    "name": "Daserste",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Das_Erste_2014.svg/640px-Das_Erste_2014.svg.png",
+    "name": "St",
+    "logo": "https://i.imgur.com/Hp0stVQ.png",
     "category": "general",
     "urls": [
-      "https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8"
+      "https://livestar.siliconweb.com/starvod/star4/star4.m3u8"
     ]
   },
   {
@@ -893,35 +853,11 @@
     ]
   },
   {
-    "name": "Stinternational",
-    "logo": "https://i.imgur.com/Hp0stVQ.png",
+    "name": "Daserste",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Das_Erste_2014.svg/640px-Das_Erste_2014.svg.png",
     "category": "general",
     "urls": [
-      "https://livestar.siliconweb.com/starvod/star_int/star_int.m3u8"
-    ]
-  },
-  {
-    "name": "Vsrhelyitelevzi",
-    "logo": "https://i.imgur.com/WOEqdmx.png",
-    "category": "general",
-    "urls": [
-      "https://stream.vasarhelyitelevizio.hu/stream/stream.m3u8"
-    ]
-  },
-  {
-    "name": "Cma",
-    "logo": "https://i.imgur.com/UpV2PRk.png",
-    "category": "general",
-    "urls": [
-      "https://stream3.camara.gov.br/tv1/manifest.m3u8"
-    ]
-  },
-  {
-    "name": "Canale",
-    "logo": "https://i.imgur.com/9cuOLCn.png",
-    "category": "general",
-    "urls": [
-      "http://wms.shared.streamshow.it:80/canale7/canale7/playlist.m3u8"
+      "https://daserste-live.ard-mcdn.de/daserste/live/hls/de/master.m3u8"
     ]
   },
   {
@@ -933,11 +869,19 @@
     ]
   },
   {
-    "name": "Ondawebradio",
-    "logo": "https://i.imgur.com/3hTvrC8.jpg",
+    "name": "Stcentralgreece",
+    "logo": "https://i.imgur.com/BTUEvxg.png",
     "category": "general",
     "urls": [
-      "http://178.33.224.197:1935/ondaradioweb/ondaradioweb/playlist.m3u8"
+      "https://telmaco-cdn.akamaized.net/starcgr/default/dash/LAMIAStar-video=3000000.dash"
+    ]
+  },
+  {
+    "name": "Vsrhelyitelevzi",
+    "logo": "https://i.imgur.com/WOEqdmx.png",
+    "category": "general",
+    "urls": [
+      "https://stream.vasarhelyitelevizio.hu/stream/stream.m3u8"
     ]
   },
   {
@@ -965,75 +909,27 @@
     ]
   },
   {
+    "name": "Canale",
+    "logo": "https://i.imgur.com/9cuOLCn.png",
+    "category": "general",
+    "urls": [
+      "http://wms.shared.streamshow.it:80/canale7/canale7/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Ondawebradio",
+    "logo": "https://i.imgur.com/3hTvrC8.jpg",
+    "category": "general",
+    "urls": [
+      "http://178.33.224.197:1935/ondaradioweb/ondaradioweb/playlist.m3u8"
+    ]
+  },
+  {
     "name": "Aurorate",
     "logo": "https://i.imgur.com/BoLZ5wG.png",
     "category": "general",
     "urls": [
       "https://59d7d6f47d7fc.streamlock.net/auroraarte/auroraarte/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Bluesky",
-    "logo": "https://i.imgur.com/rzuQslM.png",
-    "category": "general",
-    "urls": [
-      "https://cdn5.smart-tv-data.com/bluesky/bluesky-live/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Icorimini",
-    "logo": "https://i.imgur.com/z05VSSN.png",
-    "category": "general",
-    "urls": [
-      "https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Universidad",
-    "logo": "https://i.imgur.com/tvLHiAT.png",
-    "category": "general",
-    "urls": [
-      "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8"
-    ]
-  },
-  {
-    "name": "Stt",
-    "logo": "https://i.imgur.com/nrEtmBN.png",
-    "category": "general",
-    "urls": [
-      "https://live.cast-control.eu/StartMedia/StartMedia/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Cina",
-    "logo": "https://i.imgur.com/FMGcm6I.jpg",
-    "category": "general",
-    "urls": [
-      "https://samson.streamerr.co:8081/carinatv/index.m3u8"
-    ]
-  },
-  {
-    "name": "Plamentikzvetts",
-    "logo": "https://via.placeholder.com/100?text=TV",
-    "category": "general",
-    "urls": [
-      "https://plenaris.parlament.hu:446/edgelive/smil:mkogyplen.smil/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Plamentitabkzvetts",
-    "logo": "https://via.placeholder.com/100?text=TV",
-    "category": "general",
-    "urls": [
-      "https://tab.parlament.hu:446/edgelive/smil:mkogytab.smil/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Go",
-    "logo": "https://i.imgur.com/xgjrAAn.png",
-    "category": "general",
-    "urls": [
-      "https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/playlist.m3u8"
     ]
   },
   {
@@ -1045,43 +941,19 @@
     ]
   },
   {
-    "name": "Mche",
-    "logo": "https://i.imgur.com/vxgbFnR.png",
+    "name": "Cma",
+    "logo": "https://i.imgur.com/UpV2PRk.png",
     "category": "general",
     "urls": [
-      "https://live.ipstream.it/etvmarche/etvmarche.stream/playlist.m3u8"
+      "https://stream3.camara.gov.br/tv1/manifest.m3u8"
     ]
   },
   {
-    "name": "Vouli",
-    "logo": "https://i.imgur.com/1vqW7lc.png",
+    "name": "Cina",
+    "logo": "https://i.imgur.com/FMGcm6I.jpg",
     "category": "general",
     "urls": [
-      "https://diavlos-cache.cnt.grnet.gr/parltv/webtv-1b.sdp/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Qutocanaleflegreo",
-    "logo": "https://i.imgur.com/8RKY3Du.png",
-    "category": "general",
-    "urls": [
-      "http://live.mariatvcdn.com/dialogos/171e41deedf405f10c7dd6311387fb43.sdp/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Osn",
-    "logo": "https://i.imgur.com/72oMSWz.png",
-    "category": "movies",
-    "urls": [
-      "https://best-str.umn.cdn.united.cloud/stream?channel=n1bos&p=n1Sh4redSecre7iNf0&sp=n1info&stream=sp1400&u=n1info"
-    ]
-  },
-  {
-    "name": "Tenetworkorler",
-    "logo": "https://i.imgur.com/DP5y0Er.png",
-    "category": "general",
-    "urls": [
-      "https://tsw.streamingwebtv24.it:1936/artenetwork/artenetwork/playlist.m3u8"
+      "https://samson.streamerr.co:8081/carinatv/index.m3u8"
     ]
   },
   {
@@ -1093,11 +965,51 @@
     ]
   },
   {
+    "name": "Icorimini",
+    "logo": "https://i.imgur.com/z05VSSN.png",
+    "category": "general",
+    "urls": [
+      "https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Plamentikzvetts",
+    "logo": "https://via.placeholder.com/100?text=TV",
+    "category": "general",
+    "urls": [
+      "https://plenaris.parlament.hu:446/edgelive/smil:mkogyplen.smil/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Mche",
+    "logo": "https://i.imgur.com/vxgbFnR.png",
+    "category": "general",
+    "urls": [
+      "https://live.ipstream.it/etvmarche/etvmarche.stream/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Bluesky",
+    "logo": "https://i.imgur.com/rzuQslM.png",
+    "category": "general",
+    "urls": [
+      "https://cdn5.smart-tv-data.com/bluesky/bluesky-live/playlist.m3u8"
+    ]
+  },
+  {
     "name": "Super",
     "logo": "https://i.imgur.com/7gUZcEh.png",
     "category": "general",
     "urls": [
       "http://wms.shared.streamshow.it:1935/supertv/supertv/live.m3u8"
+    ]
+  },
+  {
+    "name": "Universidad",
+    "logo": "https://i.imgur.com/tvLHiAT.png",
+    "category": "general",
+    "urls": [
+      "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8"
     ]
   },
   {
@@ -1109,27 +1021,27 @@
     ]
   },
   {
-    "name": "Cameradeideputati",
-    "logo": "https://i.imgur.com/fqGn1k9.png",
+    "name": "Plamentitabkzvetts",
+    "logo": "https://via.placeholder.com/100?text=TV",
     "category": "general",
     "urls": [
-      "https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8"
+      "https://tab.parlament.hu:446/edgelive/smil:mkogytab.smil/playlist.m3u8"
     ]
   },
   {
-    "name": "Alma",
-    "logo": "https://i.imgur.com/Y8JiDwN.png",
+    "name": "Stt",
+    "logo": "https://i.imgur.com/nrEtmBN.png",
     "category": "general",
     "urls": [
-      "https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8"
+      "https://live.cast-control.eu/StartMedia/StartMedia/playlist.m3u8"
     ]
   },
   {
-    "name": "Travel",
-    "logo": "https://i.imgur.com/aXAUyLN.png",
+    "name": "Go",
+    "logo": "https://i.imgur.com/xgjrAAn.png",
     "category": "general",
     "urls": [
-      "https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8"
+      "https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/playlist.m3u8"
     ]
   },
   {
@@ -1141,27 +1053,35 @@
     ]
   },
   {
-    "name": "Poledivita",
-    "logo": "https://i.imgur.com/M9mIiZD.png",
+    "name": "Cameradeideputati",
+    "logo": "https://i.imgur.com/fqGn1k9.png",
     "category": "general",
     "urls": [
-      "https://64b16f23efbee.streamlock.net/paroledivita/paroledivita/playlist.m3u8"
+      "https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8"
     ]
   },
   {
-    "name": "Radio3Minblu",
-    "logo": "https://i.imgur.com/d7O7Uqa.png",
+    "name": "Travel",
+    "logo": "https://i.imgur.com/aXAUyLN.png",
     "category": "general",
     "urls": [
-      "https://stream.mariatvcdn.com/telemistrettaradio/900bfcc0f9012ea272584fd5ff5281b8.sdp/playlist.m3u8"
+      "https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8"
     ]
   },
   {
-    "name": "Tezzotelesandomenico",
-    "logo": "https://i.imgur.com/WQ8eQXc.png",
+    "name": "Qutocanaleflegreo",
+    "logo": "https://i.imgur.com/8RKY3Du.png",
     "category": "general",
     "urls": [
-      "https://stream.mariatvcdn.com/tsd/7c59373bfdb38201b9215ff86f0ce6af.sdp/playlist.m3u8"
+      "http://live.mariatvcdn.com/dialogos/171e41deedf405f10c7dd6311387fb43.sdp/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Alma",
+    "logo": "https://i.imgur.com/Y8JiDwN.png",
+    "category": "general",
+    "urls": [
+      "https://streaming.softwarecreation.it/AlmaTv/AlmaTv/playlist.m3u8"
     ]
   },
   {
@@ -1173,27 +1093,19 @@
     ]
   },
   {
+    "name": "Vouli",
+    "logo": "https://i.imgur.com/1vqW7lc.png",
+    "category": "general",
+    "urls": [
+      "https://diavlos-cache.cnt.grnet.gr/parltv/webtv-1b.sdp/playlist.m3u8"
+    ]
+  },
+  {
     "name": "Ptenope",
     "logo": "https://i.imgur.com/FtuWkj1.png",
     "category": "general",
     "urls": [
       "https://diretta.arcapuglia.it:8080/live/partenope/index.m3u8"
-    ]
-  },
-  {
-    "name": "Odeon",
-    "logo": "https://i.imgur.com/M1tVBuH.png",
-    "category": "general",
-    "urls": [
-      "https://streaming.softwarecreation.it/Odeon/Odeon/manifest.m3u8"
-    ]
-  },
-  {
-    "name": "Gold",
-    "logo": "https://i.imgur.com/3rVi4kD.png",
-    "category": "general",
-    "urls": [
-      "https://streaming.softwarecreation.it/GoldTv/GoldTv/playlist.m3u8"
     ]
   },
   {
@@ -1205,19 +1117,27 @@
     ]
   },
   {
-    "name": "Italia",
-    "logo": "https://i.imgur.com/YBXkY4w.png",
+    "name": "Tenetworkorler",
+    "logo": "https://i.imgur.com/DP5y0Er.png",
     "category": "general",
     "urls": [
-      "https://streaming.softwarecreation.it/Italia7/Italia7/playlist.m3u8"
+      "https://tsw.streamingwebtv24.it:1936/artenetwork/artenetwork/playlist.m3u8"
     ]
   },
   {
-    "name": "Lazio",
-    "logo": "https://i.imgur.com/DAj5Uwb.png",
+    "name": "Tezzotelesandomenico",
+    "logo": "https://i.imgur.com/WQ8eQXc.png",
     "category": "general",
     "urls": [
-      "https://streaming.softwarecreation.it/LazioTv/LazioTv/playlist.m3u8"
+      "https://stream.mariatvcdn.com/tsd/7c59373bfdb38201b9215ff86f0ce6af.sdp/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Radio3Minblu",
+    "logo": "https://i.imgur.com/d7O7Uqa.png",
+    "category": "general",
+    "urls": [
+      "https://stream.mariatvcdn.com/telemistrettaradio/900bfcc0f9012ea272584fd5ff5281b8.sdp/playlist.m3u8"
     ]
   },
   {
@@ -1226,6 +1146,38 @@
     "category": "general",
     "urls": [
       "https://live.mariatvcdn.com/tvprato/2db0dd5674586686a867ec52c3aa8e06.sdp/mono.m3u8"
+    ]
+  },
+  {
+    "name": "Telepavia",
+    "logo": "https://i.imgur.com/YVodo4T.png",
+    "category": "general",
+    "urls": [
+      "http://wms.shared.streamshow.it:1935/telepavia/telepavia/live.m3u8"
+    ]
+  },
+  {
+    "name": "Poledivita",
+    "logo": "https://i.imgur.com/M9mIiZD.png",
+    "category": "general",
+    "urls": [
+      "https://64b16f23efbee.streamlock.net/paroledivita/paroledivita/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Telequattrotrieste",
+    "logo": "https://i.imgur.com/MFxQxve.png",
+    "category": "general",
+    "urls": [
+      "http://wms.shared.streamshow.it/telequattro/telequattro/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Teleleonessa",
+    "logo": "https://i.imgur.com/jq3etlV.png",
+    "category": "general",
+    "urls": [
+      "http://wms.shared.streamshow.it:1935/teleleonessa/teleleonessa/live.m3u8"
     ]
   },
   {
@@ -1238,29 +1190,45 @@
   },
   {
     "name": "Teleradiopace",
-    "logo": "https://i.imgur.com/ORkkXM8.png",
+    "logo": "https://i.imgur.com/pTqIxFD.png",
     "category": "general",
     "urls": [
       "https://932y4273djv8-hls-live.mariatvcdn.it/teleradiopace3/d2274c22e9ee09eb2eda01ed0496f8f5.sdp/playlist.m3u8",
-      "https://jk3lz2bwlw79-hls-live.mariatvcdn.it/teleradiopace1/efcc8fc46cab26315ce3f5845d76008f.sdp/playlist.m3u8",
       "https://j78dpr7nyq5r-hls-live.mariatvcdn.it/teleradiopace4/13d74f2cfe921bfbc262697203d47d8f.sdp/playlist.m3u8",
+      "https://jk3lz2bwlw79-hls-live.mariatvcdn.it/teleradiopace1/efcc8fc46cab26315ce3f5845d76008f.sdp/playlist.m3u8",
       "https://zkpywrbgdbeg-hls-live.mariatvcdn.it/teleradiopace2/254c9b5c52a73a94ef0f6169cbd05dc2.sdp/playlist.m3u8"
     ]
   },
   {
-    "name": "Telequattrotrieste",
-    "logo": "https://i.imgur.com/MFxQxve.png",
+    "name": "Odeon",
+    "logo": "https://i.imgur.com/M1tVBuH.png",
     "category": "general",
     "urls": [
-      "http://wms.shared.streamshow.it/telequattro/telequattro/playlist.m3u8"
+      "https://streaming.softwarecreation.it/Odeon/Odeon/manifest.m3u8"
     ]
   },
   {
-    "name": "Telepavia",
-    "logo": "https://i.imgur.com/YVodo4T.png",
+    "name": "Ashqs1080P",
+    "logo": "https://i.imgur.com/bqRC3sl.png",
     "category": "general",
     "urls": [
-      "http://wms.shared.streamshow.it:1935/telepavia/telepavia/live.m3u8"
+      "https://live-news.asharq.com/asharq.m3u8"
+    ]
+  },
+  {
+    "name": "Lazio",
+    "logo": "https://i.imgur.com/DAj5Uwb.png",
+    "category": "general",
+    "urls": [
+      "https://streaming.softwarecreation.it/LazioTv/LazioTv/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Gold",
+    "logo": "https://i.imgur.com/3rVi4kD.png",
+    "category": "general",
+    "urls": [
+      "https://streaming.softwarecreation.it/GoldTv/GoldTv/playlist.m3u8"
     ]
   },
   {
@@ -1272,11 +1240,11 @@
     ]
   },
   {
-    "name": "Teleleonessa",
-    "logo": "https://i.imgur.com/jq3etlV.png",
+    "name": "Italia",
+    "logo": "https://i.imgur.com/YBXkY4w.png",
     "category": "general",
     "urls": [
-      "http://wms.shared.streamshow.it:1935/teleleonessa/teleleonessa/live.m3u8"
+      "https://streaming.softwarecreation.it/Italia7/Italia7/playlist.m3u8"
     ]
   },
   {
@@ -1285,14 +1253,6 @@
     "category": "general",
     "urls": [
       "https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8"
-    ]
-  },
-  {
-    "name": "Telecitylombdia",
-    "logo": "https://i.imgur.com/ECvJ3ZD.jpeg",
-    "category": "general",
-    "urls": [
-      "https://64b16f23efbee.streamlock.net/telecitylombardia/telecitylombardia/playlist.m3u8"
     ]
   },
   {
@@ -1320,35 +1280,11 @@
     ]
   },
   {
-    "name": "Videotelecnia",
-    "logo": "https://i.imgur.com/r4K9JHW.png",
+    "name": "Telecitylombdia",
+    "logo": "https://i.imgur.com/ECvJ3ZD.jpeg",
     "category": "general",
     "urls": [
-      "https://rst2.saiuzwebnetwork.it:8081/vtccarnia/index.m3u8"
-    ]
-  },
-  {
-    "name": "Qattelevision",
-    "logo": "https://i.imgur.com/iWJxDUm.png",
-    "category": "general",
-    "urls": [
-      "https://qatartv.akamaized.net/hls/live/2026573/qtv1/master.m3u8"
-    ]
-  },
-  {
-    "name": "Teleitalia",
-    "logo": "https://i.imgur.com/lTuPSOn.png",
-    "category": "general",
-    "urls": [
-      "https://streaming.softwarecreation.it/teleitalia/teleitalia/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Teleregione",
-    "logo": "https://i.imgur.com/i5WozUP.png",
-    "category": "general",
-    "urls": [
-      "https://streaming.softwarecreation.it/TR118/TR118/playlist.m3u8"
+      "https://64b16f23efbee.streamlock.net/telecitylombardia/telecitylombardia/playlist.m3u8"
     ]
   },
   {
@@ -1360,11 +1296,11 @@
     ]
   },
   {
-    "name": "Aljazeeramubasher",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/9/90/Al_Jazeera_Mubasher_logo.png",
-    "category": "news",
+    "name": "Videotelecnia",
+    "logo": "https://i.imgur.com/r4K9JHW.png",
+    "category": "general",
     "urls": [
-      "https://live-hls-web-ajm.getaj.net/AJM/index.m3u8"
+      "https://rst2.saiuzwebnetwork.it:8081/vtccarnia/index.m3u8"
     ]
   },
   {
@@ -1376,11 +1312,43 @@
     ]
   },
   {
-    "name": "Tusciasabina",
-    "logo": "https://i.imgur.com/Tq5nEAy.png",
+    "name": "Qattelevision",
+    "logo": "https://i.imgur.com/iWJxDUm.png",
     "category": "general",
     "urls": [
-      "http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/chunks.m3u8"
+      "https://qatartv.akamaized.net/hls/live/2026573/qtv1/master.m3u8"
+    ]
+  },
+  {
+    "name": "Lunanapoli",
+    "logo": "https://i.imgur.com/jxhuoyE.png",
+    "category": "general",
+    "urls": [
+      "https://diretta.arcapuglia.it:8080/live/teleluna/index.m3u8"
+    ]
+  },
+  {
+    "name": "Teleitalia",
+    "logo": "https://i.imgur.com/lTuPSOn.png",
+    "category": "general",
+    "urls": [
+      "https://streaming.softwarecreation.it/teleitalia/teleitalia/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Aljazeeramubasher",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/9/90/Al_Jazeera_Mubasher_logo.png",
+    "category": "news",
+    "urls": [
+      "https://live-hls-web-ajm.getaj.net/AJM/index.m3u8"
+    ]
+  },
+  {
+    "name": "Teleregione",
+    "logo": "https://i.imgur.com/i5WozUP.png",
+    "category": "general",
+    "urls": [
+      "https://streaming.softwarecreation.it/TR118/TR118/playlist.m3u8"
     ]
   },
   {
@@ -1392,11 +1360,11 @@
     ]
   },
   {
-    "name": "Lunanapoli",
-    "logo": "https://i.imgur.com/jxhuoyE.png",
+    "name": "Tusciasabina",
+    "logo": "https://i.imgur.com/Tq5nEAy.png",
     "category": "general",
     "urls": [
-      "https://diretta.arcapuglia.it:8080/live/teleluna/index.m3u8"
+      "http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/chunks.m3u8"
     ]
   },
   {
@@ -1416,14 +1384,6 @@
     ]
   },
   {
-    "name": "Ctoonnetworkabic",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Cartoon_Network_Arabic_logo.png",
-    "category": "general",
-    "urls": [
-      "https://shls-cartoon-net-prod-dub.shahid.net/out/v1/dc4aa87372374325a66be458f29eab0f/index.m3u8"
-    ]
-  },
-  {
     "name": "Ad",
     "logo": "https://i.imgur.com/FvlcU3z.png",
     "category": "general",
@@ -1432,11 +1392,11 @@
     ]
   },
   {
-    "name": "Skys",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/Sky_News_logo.svg/512px-Sky_News_logo.svg.png",
+    "name": "Ctoonnetworkabic",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Cartoon_Network_Arabic_logo.png",
     "category": "general",
     "urls": [
-      "https://stream.skynewsarabia.com/hls/sna.m3u8"
+      "https://shls-cartoon-net-prod-dub.shahid.net/out/v1/dc4aa87372374325a66be458f29eab0f/index.m3u8"
     ]
   },
   {
@@ -1480,14 +1440,6 @@
     ]
   },
   {
-    "name": "Plutohorror",
-    "logo": "https://i.imgur.com/An93hAh.png",
-    "category": "general",
-    "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/569546031a619b8f07ce6e25/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=75&deviceId=569546031a619b8f07ce6e25&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
-    ]
-  },
-  {
     "name": "Plutothrillers",
     "logo": "https://i.imgur.com/jyiFzG4.png",
     "category": "general",
@@ -1496,83 +1448,11 @@
     ]
   },
   {
-    "name": "Scinema",
-    "logo": "https://i.imgur.com/wk9Baz9.png",
-    "category": "general",
-    "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f4d878d3d19b30007d2e782/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=96&deviceId=5f4d878d3d19b30007d2e782&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
-    ]
-  },
-  {
     "name": "Plutocrimemovies",
     "logo": "https://i.imgur.com/PlAQrIb.png",
     "category": "movies",
     "urls": [
       "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f4d8594eb979c0007706de7/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=73&deviceId=5f4d8594eb979c0007706de7&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
-    ]
-  },
-  {
-    "name": "Plutodocumenties",
-    "logo": "https://i.imgur.com/Mr4ZsNZ.png",
-    "category": "general",
-    "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5b85a7582921777994caea63/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=91&deviceId=5b85a7582921777994caea63&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
-    ]
-  },
-  {
-    "name": "Blackcinema",
-    "logo": "https://i.imgur.com/Zh1QGW9.png",
-    "category": "general",
-    "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/58af4c093a41ca9d4ecabe96/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=80&deviceId=58af4c093a41ca9d4ecabe96&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
-    ]
-  },
-  {
-    "name": "Plutostaffpicks",
-    "logo": "https://i.imgur.com/DFDHAT8.png",
-    "category": "general",
-    "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f4d863b98b41000076cd061/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=90&deviceId=5f4d863b98b41000076cd061&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
-    ]
-  },
-  {
-    "name": "Plutowesterns",
-    "logo": "https://i.imgur.com/79R7m0b.png",
-    "category": "general",
-    "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5b4e94282d4ec87bdcbb87cd/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=103&deviceId=5b4e94282d4ec87bdcbb87cd&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
-    ]
-  },
-  {
-    "name": "Sthrowback",
-    "logo": "https://i.imgur.com/sI1o3uK.png",
-    "category": "general",
-    "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f4d86f519358a00072b978e/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=94&deviceId=5f4d86f519358a00072b978e&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
-    ]
-  },
-  {
-    "name": "Pamountmovie",
-    "logo": "https://i.imgur.com/CfqRav0.png",
-    "category": "movies",
-    "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5cb0cae7a461406ffe3f5213/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=100&deviceId=5cb0cae7a461406ffe3f5213&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
-    ]
-  },
-  {
-    "name": "Bbchome",
-    "logo": "https://i.imgur.com/Ii8DX1x.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fb5836fe745b600070fc743/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Srewind",
-    "logo": "https://i.imgur.com/0FaLAhK.png",
-    "category": "general",
-    "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ca525b650be2571e3943c63/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=95&deviceId=5ca525b650be2571e3943c63&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
     ]
   },
   {
@@ -1592,19 +1472,67 @@
     ]
   },
   {
-    "name": "Classicmovies",
-    "logo": "https://i.imgur.com/feWPHep.png",
-    "category": "movies",
+    "name": "Plutostaffpicks",
+    "logo": "https://i.imgur.com/DFDHAT8.png",
+    "category": "general",
     "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/561c5b0dada51f8004c4d855/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=106&deviceId=561c5b0dada51f8004c4d855&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f4d863b98b41000076cd061/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=90&deviceId=5f4d863b98b41000076cd061&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
     ]
   },
   {
-    "name": "Flicksoffury",
-    "logo": "https://i.imgur.com/yhyzBfb.png",
+    "name": "Blackcinema",
+    "logo": "https://i.imgur.com/Zh1QGW9.png",
     "category": "general",
     "urls": [
-      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/58e55b14ad8e9c364d55f717/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=112&deviceId=58e55b14ad8e9c364d55f717&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/58af4c093a41ca9d4ecabe96/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=80&deviceId=58af4c093a41ca9d4ecabe96&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+    ]
+  },
+  {
+    "name": "Plutohorror",
+    "logo": "https://i.imgur.com/An93hAh.png",
+    "category": "general",
+    "urls": [
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/569546031a619b8f07ce6e25/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=75&deviceId=569546031a619b8f07ce6e25&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+    ]
+  },
+  {
+    "name": "Pamountmovie",
+    "logo": "https://i.imgur.com/CfqRav0.png",
+    "category": "movies",
+    "urls": [
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5cb0cae7a461406ffe3f5213/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=100&deviceId=5cb0cae7a461406ffe3f5213&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+    ]
+  },
+  {
+    "name": "Srewind",
+    "logo": "https://i.imgur.com/0FaLAhK.png",
+    "category": "general",
+    "urls": [
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ca525b650be2571e3943c63/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=95&deviceId=5ca525b650be2571e3943c63&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+    ]
+  },
+  {
+    "name": "Plutowesterns",
+    "logo": "https://i.imgur.com/79R7m0b.png",
+    "category": "general",
+    "urls": [
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5b4e94282d4ec87bdcbb87cd/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=103&deviceId=5b4e94282d4ec87bdcbb87cd&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+    ]
+  },
+  {
+    "name": "Scinema",
+    "logo": "https://i.imgur.com/wk9Baz9.png",
+    "category": "general",
+    "urls": [
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f4d878d3d19b30007d2e782/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=96&deviceId=5f4d878d3d19b30007d2e782&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+    ]
+  },
+  {
+    "name": "Sthrowback",
+    "logo": "https://i.imgur.com/sI1o3uK.png",
+    "category": "general",
+    "urls": [
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f4d86f519358a00072b978e/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=94&deviceId=5f4d86f519358a00072b978e&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
     ]
   },
   {
@@ -1616,6 +1544,30 @@
     ]
   },
   {
+    "name": "Bbchome",
+    "logo": "https://i.imgur.com/Ii8DX1x.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fb5836fe745b600070fc743/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Plutodocumenties",
+    "logo": "https://i.imgur.com/Mr4ZsNZ.png",
+    "category": "general",
+    "urls": [
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5b85a7582921777994caea63/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=91&deviceId=5b85a7582921777994caea63&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+    ]
+  },
+  {
+    "name": "Flicksoffury",
+    "logo": "https://i.imgur.com/yhyzBfb.png",
+    "category": "general",
+    "urls": [
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/58e55b14ad8e9c364d55f717/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=112&deviceId=58e55b14ad8e9c364d55f717&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+    ]
+  },
+  {
     "name": "Theasylum",
     "logo": "https://i.imgur.com/rOxQfdG.png",
     "category": "general",
@@ -1624,11 +1576,36 @@
     ]
   },
   {
-    "name": "Agn",
-    "logo": "https://i.imgur.com/8H3Q07b.png",
+    "name": "Classicmovies",
+    "logo": "https://i.imgur.com/feWPHep.png",
+    "category": "movies",
+    "urls": [
+      "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/561c5b0dada51f8004c4d855/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=106&deviceId=561c5b0dada51f8004c4d855&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false"
+    ]
+  },
+  {
+    "name": "Jrmala",
+    "logo": "https://i.imgur.com/tQHkHD0.png",
     "category": "general",
     "urls": [
-      "https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8"
+      "https://air.star.lv/TV_Jurmala_multistream/index.m3u8"
+    ]
+  },
+  {
+    "name": "Skys",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/Sky_News_logo.svg/512px-Sky_News_logo.svg.png",
+    "category": "general",
+    "urls": [
+      "https://stream.skynewsarabia.com/hls/sna.m3u8"
+    ]
+  },
+  {
+    "name": "Aljazeera",
+    "logo": "https://i.imgur.com/BB93NQP.png",
+    "category": "news",
+    "urls": [
+      "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8",
+      "https://live-hls-web-aja.getaj.net/AJA/index.m3u8"
     ]
   },
   {
@@ -1640,19 +1617,11 @@
     ]
   },
   {
-    "name": "Cbss",
-    "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-news-us.png",
+    "name": "Idealworld",
+    "logo": "https://i.imgur.com/su6GH7i.png",
     "category": "general",
     "urls": [
-      "https://dai.google.com/linear/hls/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8"
-    ]
-  },
-  {
-    "name": "Cgtn",
-    "logo": "https://i.imgur.com/fMsJYzl.png",
-    "category": "general",
-    "urls": [
-      "https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8"
+      "https://ythls.armelin.one/channel/UCJbgGTpBWuC87VFIKTTO4RQ.m3u8"
     ]
   },
   {
@@ -1664,12 +1633,11 @@
     ]
   },
   {
-    "name": "Aljazeera",
-    "logo": "https://i.imgur.com/BB93NQP.png",
-    "category": "news",
+    "name": "Peopleeawesome",
+    "logo": "https://i.imgur.com/xwz9zKk.jpeg",
+    "category": "general",
     "urls": [
-      "https://live-hls-web-aja.getaj.net/AJA/index.m3u8",
-      "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"
+      "https://jukin-peopleareawesome-2-it.samsung.wurl.tv/playlist.m3u8"
     ]
   },
   {
@@ -1681,14 +1649,6 @@
     ]
   },
   {
-    "name": "Macgyverpluto",
-    "logo": "https://i.imgur.com/bz9IwWU.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6245d4511358320007029cdf/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
     "name": "Cchasepluto",
     "logo": "https://i.imgur.com/F1jXkhK.png",
     "category": "general",
@@ -1697,19 +1657,43 @@
     ]
   },
   {
+    "name": "Accuweathernow",
+    "logo": "https://i.imgur.com/M8wbVYK.png",
+    "category": "general",
+    "urls": [
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8"
+    ]
+  },
+  {
+    "name": "Cgtn",
+    "logo": "https://i.imgur.com/fMsJYzl.png",
+    "category": "general",
+    "urls": [
+      "https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8"
+    ]
+  },
+  {
+    "name": "Monsterjampluto",
+    "logo": "https://i.imgur.com/jxGhINd.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/65bce7f1d77d450008b3a430/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Macgyverpluto",
+    "logo": "https://i.imgur.com/bz9IwWU.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6245d4511358320007029cdf/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
     "name": "Settimocielopluto",
     "logo": "https://i.imgur.com/TC5lo6r.png",
     "category": "general",
     "urls": [
       "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6245d3792792150007e20634/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Peopleeawesome",
-    "logo": "https://i.imgur.com/xwz9zKk.jpeg",
-    "category": "general",
-    "urls": [
-      "https://jukin-peopleareawesome-2-it.samsung.wurl.tv/playlist.m3u8"
     ]
   },
   {
@@ -1729,19 +1713,19 @@
     ]
   },
   {
+    "name": "Tracelatina",
+    "logo": "https://i.imgur.com/GHbz8wd.png",
+    "category": "general",
+    "urls": [
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracelatinait-samsungit/playlist.m3u8"
+    ]
+  },
+  {
     "name": "Autostopperilcielopluto",
     "logo": "https://i.imgur.com/rpC1qk7.png",
     "category": "general",
     "urls": [
       "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/638f286445264d00084ec6dc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Monsterjampluto",
-    "logo": "https://i.imgur.com/jxGhINd.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/65bce7f1d77d450008b3a430/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -1753,11 +1737,11 @@
     ]
   },
   {
-    "name": "Renegadepluto",
-    "logo": "https://i.imgur.com/Qsd9wuS.png",
+    "name": "Traceurban",
+    "logo": "https://i.imgur.com/PAx9qj8.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/634926e4b51d2d00077819a2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01131-tracetv-traceurbanit-samsungit/playlist.m3u8"
     ]
   },
   {
@@ -1769,27 +1753,19 @@
     ]
   },
   {
-    "name": "Accuweathernow",
-    "logo": "https://i.imgur.com/M8wbVYK.png",
-    "category": "general",
-    "urls": [
-      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00684-accuweather-accuweather-plex/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Westernpluto",
-    "logo": "https://i.imgur.com/6vmgQBl.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62e7fb67478a5b0007e6c50c/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
     "name": "Filmazionepluto",
     "logo": "https://i.imgur.com/ZmAuf3H.png",
     "category": "general",
     "urls": [
       "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608aa20a2e7f270007c4878d/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Renegadepluto",
+    "logo": "https://i.imgur.com/Qsd9wuS.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/634926e4b51d2d00077819a2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -1801,27 +1777,11 @@
     ]
   },
   {
-    "name": "Horrorpluto",
-    "logo": "https://i.imgur.com/zhoHRSE.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61c09e3ac210ed0007606620/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
     "name": "Filmclassicipluto",
     "logo": "https://i.imgur.com/jNyZPLV.png",
     "category": "general",
     "urls": [
       "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608aa3c446d73500075f0e24/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Filmromanticipluto",
-    "logo": "https://i.imgur.com/KxPsLG3.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608aa4a4cc92820007b663af/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -1833,11 +1793,11 @@
     ]
   },
   {
-    "name": "Christmaspluto",
-    "logo": "https://i.imgur.com/tQ8lN30.png",
+    "name": "Horrorpluto",
+    "logo": "https://i.imgur.com/zhoHRSE.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/612e05b885183d0007958101/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61c09e3ac210ed0007606620/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -1849,11 +1809,27 @@
     ]
   },
   {
-    "name": "Filmcommediapluto",
-    "logo": "https://i.imgur.com/cSKaVHW.png",
+    "name": "Filmromanticipluto",
+    "logo": "https://i.imgur.com/KxPsLG3.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608aa512d67fd900072323db/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608aa4a4cc92820007b663af/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Westernpluto",
+    "logo": "https://i.imgur.com/6vmgQBl.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62e7fb67478a5b0007e6c50c/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Christmaspluto",
+    "logo": "https://i.imgur.com/tQ8lN30.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/612e05b885183d0007958101/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -1865,51 +1841,11 @@
     ]
   },
   {
-    "name": "Scifipluto",
-    "logo": "https://i.imgur.com/5B94N8g.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61728bb9ee3773000840c1fa/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
     "name": "Theasylumpluto",
     "logo": "https://i.imgur.com/S2jlaiJ.png",
     "category": "general",
     "urls": [
       "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62e8d5369e48940007fc1dc1/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Traceurban",
-    "logo": "https://i.imgur.com/PAx9qj8.png",
-    "category": "general",
-    "urls": [
-      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01131-tracetv-traceurbanit-samsungit/playlist.m3u8"
-    ]
-  },
-  {
-    "name": "Mutantxpluto",
-    "logo": "https://i.imgur.com/SptYKFI.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60802c209a26320007c92ad5/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Sttrektheoriginalseriespluto",
-    "logo": "https://i.imgur.com/VnUrFqB.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6581a09edfed030008e12b39/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Tracelatina",
-    "logo": "https://i.imgur.com/GHbz8wd.png",
-    "category": "general",
-    "urls": [
-      "https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracelatinait-samsungit/playlist.m3u8"
     ]
   },
   {
@@ -1921,11 +1857,19 @@
     ]
   },
   {
-    "name": "Squadraspecialecobra11Pluto",
-    "logo": "https://i.imgur.com/HtDoAF2.png",
+    "name": "Sttrektheoriginalseriespluto",
+    "logo": "https://i.imgur.com/VnUrFqB.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/625e6cc905e09f00073addee/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6581a09edfed030008e12b39/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Forensicfilespluto",
+    "logo": "https://i.imgur.com/hF5maH7.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/64ec5cf50f73a800081310a5/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -1945,43 +1889,19 @@
     ]
   },
   {
-    "name": "Forensicfilespluto",
-    "logo": "https://i.imgur.com/hF5maH7.png",
+    "name": "Scifipluto",
+    "logo": "https://i.imgur.com/5B94N8g.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/64ec5cf50f73a800081310a5/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61728bb9ee3773000840c1fa/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
-    "name": "Catfishpluto",
-    "logo": "https://i.imgur.com/KajHKoP.png",
+    "name": "Filmcommediapluto",
+    "logo": "https://i.imgur.com/cSKaVHW.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f9ed2c75660007322bb7/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Crimepluto",
-    "logo": "https://i.imgur.com/WRMGIdb.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608aa777b907770007e5d05d/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Gbs",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/GB_News_Logo.svg/512px-GB_News_Logo.svg.png",
-    "category": "general",
-    "urls": [
-      "https://ythls.armelin.one/channel/UC0vn8ISa4LKMunLbzaXLnOQ.m3u8"
-    ]
-  },
-  {
-    "name": "Ilbancodeipugnipluto",
-    "logo": "https://i.imgur.com/2Lj1sdf.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60e4507a06171800072339a3/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608aa512d67fd900072323db/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -1993,19 +1913,11 @@
     ]
   },
   {
-    "name": "Nd24X",
-    "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/ndtv-24x7-in.png",
+    "name": "Mutantxpluto",
+    "logo": "https://i.imgur.com/SptYKFI.png",
     "category": "general",
     "urls": [
-      "https://ythls.armelin.one/channel/UCZFMm1mMw0F81Z37aaEzTUA.m3u8"
-    ]
-  },
-  {
-    "name": "Affefattopluto",
-    "logo": "https://i.imgur.com/BuGkGsL.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/64ec5c6644fe100009d114ae/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60802c209a26320007c92ad5/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2017,14 +1929,6 @@
     ]
   },
   {
-    "name": "Wion",
-    "logo": "https://i.imgur.com/Wc5Z3iS.png",
-    "category": "general",
-    "urls": [
-      "https://ythls.armelin.one/channel/UC_gUM8rL-Lrg6O3adPW9K1g.m3u8"
-    ]
-  },
-  {
     "name": "Consulenzeillegalipluto",
     "logo": "https://i.imgur.com/AoOiYJX.png",
     "category": "general",
@@ -2033,11 +1937,27 @@
     ]
   },
   {
-    "name": "Casepazzeschepluto",
-    "logo": "https://i.imgur.com/v8IDWwX.png",
+    "name": "Affefattopluto",
+    "logo": "https://i.imgur.com/BuGkGsL.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/626bb07a58b8dd0007e9f36e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/64ec5c6644fe100009d114ae/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Sasia",
+    "logo": "https://i.imgur.com/xWglicB.png",
+    "category": "general",
+    "urls": [
+      "https://ythls.armelin.one/channel/UC83jt4dlz1Gjl58fzQrrKZg.m3u8"
+    ]
+  },
+  {
+    "name": "Ilbancodeipugnipluto",
+    "logo": "https://i.imgur.com/2Lj1sdf.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60e4507a06171800072339a3/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2049,11 +1969,27 @@
     ]
   },
   {
-    "name": "Riccanzapluto",
-    "logo": "https://i.imgur.com/oBpcWEm.png",
+    "name": "Squadraspecialecobra11Pluto",
+    "logo": "https://i.imgur.com/HtDoAF2.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/626baa721c279b00072cbedd/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/625e6cc905e09f00073addee/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Crimepluto",
+    "logo": "https://i.imgur.com/WRMGIdb.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608aa777b907770007e5d05d/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Nd24X",
+    "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/ndtv-24x7-in.png",
+    "category": "general",
+    "urls": [
+      "https://ythls.armelin.one/channel/UCZFMm1mMw0F81Z37aaEzTUA.m3u8"
     ]
   },
   {
@@ -2065,27 +2001,19 @@
     ]
   },
   {
-    "name": "Teenmompluto",
-    "logo": "https://i.imgur.com/LdiTgeW.png",
+    "name": "Casepazzeschepluto",
+    "logo": "https://i.imgur.com/v8IDWwX.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62e7fc8c0d061100083946a9/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/626bb07a58b8dd0007e9f36e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
-    "name": "Thehillspluto",
-    "logo": "https://i.imgur.com/9SRojGx.png",
+    "name": "Catfishpluto",
+    "logo": "https://i.imgur.com/KajHKoP.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6466007181844c000967f80a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Worldpokertourpluto",
-    "logo": "https://i.imgur.com/AF1ON8u.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608016e446d73500075ea7e0/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f9ed2c75660007322bb7/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2097,27 +2025,11 @@
     ]
   },
   {
-    "name": "Topgepluto",
-    "logo": "https://i.imgur.com/ZZo7DXQ.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/64c109a4798def0008a6e03e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
     "name": "Annieincintapluto",
     "logo": "https://i.imgur.com/4BHrbP7.png",
     "category": "general",
     "urls": [
       "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60940a07d88ba90007b9cb71/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Madepluto",
-    "logo": "https://i.imgur.com/dguQsJ7.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6304ee20112ca70007d8accc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2129,27 +2041,27 @@
     ]
   },
   {
-    "name": "Pimpmyridepluto",
-    "logo": "https://i.imgur.com/GC2wj2K.png",
+    "name": "Madepluto",
+    "logo": "https://i.imgur.com/dguQsJ7.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/636a4eaf77279a0007f14861/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6304ee20112ca70007d8accc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
-    "name": "Pflmmapluto",
-    "logo": "https://i.imgur.com/zScgLTv.png",
+    "name": "Teenmompluto",
+    "logo": "https://i.imgur.com/LdiTgeW.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/654a299cab05240008a12639/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62e7fc8c0d061100083946a9/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
-    "name": "Robotwsbymechpluto",
-    "logo": "https://i.imgur.com/vGqha3k.png",
+    "name": "Riccanzapluto",
+    "logo": "https://i.imgur.com/oBpcWEm.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/651581ba6a84140008593586/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/626baa721c279b00072cbedd/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2161,27 +2073,51 @@
     ]
   },
   {
-    "name": "Peopleeawesomepluto",
-    "logo": "https://i.imgur.com/jn0OeWv.png",
+    "name": "Thehillspluto",
+    "logo": "https://i.imgur.com/9SRojGx.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608017cbe375e400070cc981/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6466007181844c000967f80a/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
-    "name": "Thepetcollectivepluto",
-    "logo": "https://i.imgur.com/034PrSz.png",
+    "name": "Topgepluto",
+    "logo": "https://i.imgur.com/ZZo7DXQ.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60801317a0ccef00072aaf75/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/64c109a4798def0008a6e03e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
-    "name": "Ridiculousnesspluto",
-    "logo": "https://i.imgur.com/Yyj3Dm6.png",
+    "name": "Trtworld",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TRT_World.svg/512px-TRT_World.svg.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61fbd721e5b49e00079bfedc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://ythls.armelin.one/channel/UC7fWeaHhqgM4Ry-RMpM2YYw.m3u8"
+    ]
+  },
+  {
+    "name": "Pimpmyridepluto",
+    "logo": "https://i.imgur.com/GC2wj2K.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/636a4eaf77279a0007f14861/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Robotwsbymechpluto",
+    "logo": "https://i.imgur.com/vGqha3k.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/651581ba6a84140008593586/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Worldpokertourpluto",
+    "logo": "https://i.imgur.com/AF1ON8u.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608016e446d73500075ea7e0/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2193,147 +2129,11 @@
     ]
   },
   {
-    "name": "Justforlaughspluto",
-    "logo": "https://i.imgur.com/VvEz0XX.png",
+    "name": "Pflmmapluto",
+    "logo": "https://i.imgur.com/zScgLTv.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f48c95132a00075fd859/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Sportpluto",
-    "logo": "https://i.imgur.com/o2psAYW.png",
-    "category": "sports",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608030eff4b6f70007e1684c/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Failmypluto",
-    "logo": "https://i.imgur.com/SqRDd2U.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608014d19a26320007c92ab6/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Animepluto",
-    "logo": "https://i.imgur.com/rhVF0eC.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/65b90daed77d450008a43345/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Unbeatensportspluto",
-    "logo": "https://i.imgur.com/UAiv612.png",
-    "category": "sports",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/64c3b106dac71b00080a26d2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Teenagemutantninjaturtlespluto",
-    "logo": "https://i.imgur.com/bAnyjH7.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62619405c733e8000732d1fe/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Yugiohpluto",
-    "logo": "https://i.imgur.com/rmzSC1C.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63eb82e24e83e70008ab735f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Theboatshowpluto",
-    "logo": "https://i.imgur.com/aDcwRvj.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63eb58aa60bc8f0008caa8f8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Southpkpluto",
-    "logo": "https://i.imgur.com/06wIdRV.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62bc1f502b70e3000706298e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Superspongebobpluto",
-    "logo": "https://i.imgur.com/vFiwODM.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f9281db477000759fce0/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Duefantagenitoripluto",
-    "logo": "https://i.imgur.com/HOvLgGK.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62b57a6752a0060008bc65cd/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Ddindia",
-    "logo": "https://i.imgur.com/45uptR8.png",
-    "category": "general",
-    "urls": [
-      "https://ythls.armelin.one/channel/UCGDQNvybfDDeGTf4GtigXaw.m3u8"
-    ]
-  },
-  {
-    "name": "Supergirlpowerpluto",
-    "logo": "https://i.imgur.com/lzgp9GM.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/636a4ce50728d200072eebe7/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Avatpluto",
-    "logo": "https://i.imgur.com/KDSStnJ.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/624da1cd2af90c0007c13205/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Superrugratspluto",
-    "logo": "https://i.imgur.com/QqMQZte.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62e8ddbbaed0390007b258a6/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Inazumaelevenpluto",
-    "logo": "https://i.imgur.com/2u1ic6X.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/612375086abc84000738fc03/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Superintervallopluto",
-    "logo": "https://i.imgur.com/jl7ZvE5.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62619544b1bf740007b4154b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Superzoey101Pluto",
-    "logo": "https://i.imgur.com/7FCQb1G.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6304ed62410a4c00083c0291/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/654a299cab05240008a12639/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2345,6 +2145,166 @@
     ]
   },
   {
+    "name": "Ridiculousnesspluto",
+    "logo": "https://i.imgur.com/Yyj3Dm6.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61fbd721e5b49e00079bfedc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Joys",
+    "logo": "https://i.imgur.com/kGuMNmR.png",
+    "category": "general",
+    "urls": [
+      "https://ythls.armelin.one/channel/UChd1DEecCRlxaa0-hvPACCw.m3u8"
+    ]
+  },
+  {
+    "name": "Unbeatensportspluto",
+    "logo": "https://i.imgur.com/UAiv612.png",
+    "category": "sports",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/64c3b106dac71b00080a26d2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Sportpluto",
+    "logo": "https://i.imgur.com/o2psAYW.png",
+    "category": "sports",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608030eff4b6f70007e1684c/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Theboatshowpluto",
+    "logo": "https://i.imgur.com/aDcwRvj.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63eb58aa60bc8f0008caa8f8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Failmypluto",
+    "logo": "https://i.imgur.com/SqRDd2U.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608014d19a26320007c92ab6/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Superzoey101Pluto",
+    "logo": "https://i.imgur.com/7FCQb1G.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6304ed62410a4c00083c0291/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Animepluto",
+    "logo": "https://i.imgur.com/rhVF0eC.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/65b90daed77d450008a43345/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Justforlaughspluto",
+    "logo": "https://i.imgur.com/VvEz0XX.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f48c95132a00075fd859/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Southpkpluto",
+    "logo": "https://i.imgur.com/06wIdRV.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62bc1f502b70e3000706298e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Yugiohpluto",
+    "logo": "https://i.imgur.com/rmzSC1C.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63eb82e24e83e70008ab735f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Thepetcollectivepluto",
+    "logo": "https://i.imgur.com/034PrSz.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60801317a0ccef00072aaf75/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Teenagemutantninjaturtlespluto",
+    "logo": "https://i.imgur.com/bAnyjH7.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62619405c733e8000732d1fe/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Superspongebobpluto",
+    "logo": "https://i.imgur.com/vFiwODM.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f9281db477000759fce0/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Gbs",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/GB_News_Logo.svg/512px-GB_News_Logo.svg.png",
+    "category": "general",
+    "urls": [
+      "https://ythls.armelin.one/channel/UC0vn8ISa4LKMunLbzaXLnOQ.m3u8"
+    ]
+  },
+  {
+    "name": "Supervictoriouspluto",
+    "logo": "https://i.imgur.com/ArXLm5R.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63c012504faf1c0007abfa93/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Avatpluto",
+    "logo": "https://i.imgur.com/KDSStnJ.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/624da1cd2af90c0007c13205/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Wion",
+    "logo": "https://i.imgur.com/Wc5Z3iS.png",
+    "category": "general",
+    "urls": [
+      "https://ythls.armelin.one/channel/UC_gUM8rL-Lrg6O3adPW9K1g.m3u8"
+    ]
+  },
+  {
+    "name": "Skysuk",
+    "logo": "https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1404.png",
+    "category": "general",
+    "urls": [
+      "https://ythls.armelin.one/channel/UCoMdktPbSTixAyNGwb-UYkQ.m3u8"
+    ]
+  },
+  {
+    "name": "Supergirlpowerpluto",
+    "logo": "https://i.imgur.com/lzgp9GM.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/636a4ce50728d200072eebe7/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
     "name": "Supergamingpluto",
     "logo": "https://i.imgur.com/UB7xHRQ.png",
     "category": "general",
@@ -2353,11 +2313,27 @@
     ]
   },
   {
-    "name": "Vh1Musiclegendspluto",
-    "logo": "https://i.imgur.com/kJ1MDVi.png",
+    "name": "Duefantagenitoripluto",
+    "logo": "https://i.imgur.com/HOvLgGK.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62e8cc10ca869f00078efca8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62b57a6752a0060008bc65cd/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Superrugratspluto",
+    "logo": "https://i.imgur.com/QqMQZte.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62e8ddbbaed0390007b258a6/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Superintervallopluto",
+    "logo": "https://i.imgur.com/jl7ZvE5.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62619544b1bf740007b4154b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2369,38 +2345,6 @@
     ]
   },
   {
-    "name": "Kidspluto",
-    "logo": "https://i.imgur.com/ybd7A0r.png",
-    "category": "kids",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62444e195d2ab7000861694b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Superbrothersandsisterspluto",
-    "logo": "https://i.imgur.com/KSQvVye.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61925ea79541940007d20881/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Superpoppluto",
-    "logo": "https://i.imgur.com/jlz31HP.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f7b5bb49b90007cecaad/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Superstpluto",
-    "logo": "https://i.imgur.com/YLtqPkF.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f6f8351eb0000754afb8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
     "name": "Superspyderspluto",
     "logo": "https://i.imgur.com/n89yuZh.png",
     "category": "general",
@@ -2409,27 +2353,11 @@
     ]
   },
   {
-    "name": "Vh1Rockpluto",
-    "logo": "https://i.imgur.com/P1OCuFl.png",
+    "name": "Inazumaelevenpluto",
+    "logo": "https://i.imgur.com/2u1ic6X.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/636a4173e34fd50007534542/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Kidsukrainepluto",
-    "logo": "https://i.imgur.com/MrIlypV.png",
-    "category": "kids",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/622a2d8da9d8210007d918c2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Vh1Canzoniitalianepluto",
-    "logo": "https://i.imgur.com/fpQBKP2.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63724270c7c2360007b170e8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/612375086abc84000738fc03/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2441,11 +2369,51 @@
     ]
   },
   {
-    "name": "Fehrvr",
-    "logo": "https://www.fehervartv.hu/css/img/icon-1-2.png",
+    "name": "Superbrothersandsisterspluto",
+    "logo": "https://i.imgur.com/KSQvVye.png",
     "category": "general",
     "urls": [
-      "https://cloudfront44.lexanetwork.com:1344/freerelay/fehervartv.sdp/playlist.m3u8?key=EWSj2"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61925ea79541940007d20881/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Superstpluto",
+    "logo": "https://i.imgur.com/YLtqPkF.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f6f8351eb0000754afb8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Superpoppluto",
+    "logo": "https://i.imgur.com/jlz31HP.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6093f7b5bb49b90007cecaad/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Vh1Rockpluto",
+    "logo": "https://i.imgur.com/P1OCuFl.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/636a4173e34fd50007534542/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Vh1Musiclegendspluto",
+    "logo": "https://i.imgur.com/kJ1MDVi.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62e8cc10ca869f00078efca8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Kidspluto",
+    "logo": "https://i.imgur.com/ybd7A0r.png",
+    "category": "kids",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/62444e195d2ab7000861694b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2457,35 +2425,35 @@
     ]
   },
   {
-    "name": "Vh1Hiphoprappluto",
-    "logo": "https://i.imgur.com/k1zQpiO.png",
+    "name": "Deluxeloungepluto",
+    "logo": "https://i.imgur.com/mTXgaKl.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6465fef47cb4b100086ee7bd/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6278ec6c33d85a00077ad814/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
-    "name": "Naturescapepluto",
-    "logo": "https://i.imgur.com/CGB6qiV.png",
-    "category": "general",
+    "name": "Kidsukrainepluto",
+    "logo": "https://i.imgur.com/MrIlypV.png",
+    "category": "kids",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/610a9ebe8c2ac2000734776e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/622a2d8da9d8210007d918c2/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
-    "name": "Eurospluto",
-    "logo": "https://i.imgur.com/Zpf2ykM.png",
+    "name": "Cbss",
+    "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-news-us.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61b86ea479a4390007c6d5fc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://dai.google.com/linear/hls/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8"
     ]
   },
   {
-    "name": "Fireplacepluto",
-    "logo": "https://i.imgur.com/csk1e76.png",
+    "name": "Ddindia",
+    "logo": "https://i.imgur.com/45uptR8.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/612ce23f51cce000078eeed5/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://ythls.armelin.one/channel/UCGDQNvybfDDeGTf4GtigXaw.m3u8"
     ]
   },
   {
@@ -2497,6 +2465,38 @@
     ]
   },
   {
+    "name": "Documentipluto",
+    "logo": "https://i.imgur.com/0jYrODf.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608aa8a5709d6b0007b132fe/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Fireplacepluto",
+    "logo": "https://i.imgur.com/csk1e76.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/612ce23f51cce000078eeed5/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Cbsspluto",
+    "logo": "https://i.imgur.com/ApsK6Eq.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6231ec4b62cd1f0007093c7b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Vh1Hiphoprappluto",
+    "logo": "https://i.imgur.com/k1zQpiO.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6465fef47cb4b100086ee7bd/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
     "name": "Kpoppluto",
     "logo": "https://i.imgur.com/9Vp4rx2.png",
     "category": "general",
@@ -2505,11 +2505,51 @@
     ]
   },
   {
-    "name": "Deluxeloungepluto",
-    "logo": "https://i.imgur.com/mTXgaKl.png",
+    "name": "Storiapluto",
+    "logo": "https://i.imgur.com/w5BYvsz.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6278ec6c33d85a00077ad814/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/65253fdf3fd33c00080214a3/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Houseofdocspluto",
+    "logo": "https://i.imgur.com/pFLQ18m.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6536608b4f123d000876b78b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Naturapluto",
+    "logo": "https://i.imgur.com/Pc4gx12.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60802b37709d6b0007b0c549/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Eurospluto",
+    "logo": "https://i.imgur.com/Zpf2ykM.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61b86ea479a4390007c6d5fc/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Levitedeglialtripluto",
+    "logo": "https://i.imgur.com/nngMFi5.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/653660b4295b840008a70ba3/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+    ]
+  },
+  {
+    "name": "Naturescapepluto",
+    "logo": "https://i.imgur.com/CGB6qiV.png",
+    "category": "general",
+    "urls": [
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/610a9ebe8c2ac2000734776e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
@@ -2529,67 +2569,19 @@
     ]
   },
   {
-    "name": "Houseofdocspluto",
-    "logo": "https://i.imgur.com/pFLQ18m.png",
+    "name": "Vh1Canzoniitalianepluto",
+    "logo": "https://i.imgur.com/fpQBKP2.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6536608b4f123d000876b78b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63724270c7c2360007b170e8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   },
   {
-    "name": "Cbsspluto",
-    "logo": "https://i.imgur.com/ApsK6Eq.png",
+    "name": "Peopleeawesomepluto",
+    "logo": "https://i.imgur.com/jn0OeWv.png",
     "category": "general",
     "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6231ec4b62cd1f0007093c7b/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Levitedeglialtripluto",
-    "logo": "https://i.imgur.com/nngMFi5.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/653660b4295b840008a70ba3/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Documentipluto",
-    "logo": "https://i.imgur.com/0jYrODf.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608aa8a5709d6b0007b132fe/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Naturapluto",
-    "logo": "https://i.imgur.com/Pc4gx12.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60802b37709d6b0007b0c549/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Storiapluto",
-    "logo": "https://i.imgur.com/w5BYvsz.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/65253fdf3fd33c00080214a3/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Supervictoriouspluto",
-    "logo": "https://i.imgur.com/ArXLm5R.png",
-    "category": "general",
-    "urls": [
-      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/63c012504faf1c0007abfa93/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
-    ]
-  },
-  {
-    "name": "Jrmala",
-    "logo": "https://i.imgur.com/tQHkHD0.png",
-    "category": "general",
-    "urls": [
-      "https://air.star.lv/TV_Jurmala_multistream/index.m3u8"
+      "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/608017cbe375e400070cc981/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel"
     ]
   }
 ]
